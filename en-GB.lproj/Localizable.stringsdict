@@ -92,59 +92,59 @@
 			<string>months</string>
 		</dict>
 	</dict>
-    <key>%lld weeks ago</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@VARIABLE@</string>
-        <key>VARIABLE</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>lld</string>
-            <key>zero</key>
-            <string>weeks</string>
-            <key>one</key>
-            <string>%lld week ago</string>
-            <key>other</key>
-            <string>%lld weeks ago</string>
-        </dict>
-    </dict>
-    <key>%lld months ago</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@VARIABLE@</string>
-        <key>VARIABLE</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>lld</string>
-            <key>zero</key>
-            <string>months</string>
-            <key>one</key>
-            <string>%lld month ago</string>
-            <key>other</key>
-            <string>%lld months ago</string>
-        </dict>
-    </dict>
-    <key>%lld years ago</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@VARIABLE@</string>
-        <key>VARIABLE</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>lld</string>
-            <key>zero</key>
-            <string>years</string>
-            <key>one</key>
-            <string>%lld year ago</string>
-            <key>other</key>
-            <string>%lld years ago</string>
-        </dict>
-    </dict>
+	<key>%lld weeks ago</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>weeks</string>
+			<key>one</key>
+			<string>%lld week ago</string>
+			<key>other</key>
+			<string>%lld weeks ago</string>
+		</dict>
+	</dict>
+	<key>%lld months ago</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>months</string>
+			<key>one</key>
+			<string>%lld month ago</string>
+			<key>other</key>
+			<string>%lld months ago</string>
+		</dict>
+	</dict>
+	<key>%lld years ago</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>years</string>
+			<key>one</key>
+			<string>%lld year ago</string>
+			<key>other</key>
+			<string>%lld years ago</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
