@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1400"
+   LastUpgradeVersion = "1620"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5327D282287C697400F76ADF"
-               BuildableName = "dime.app"
-               BlueprintName = "dime"
-               ReferencedContainer = "container:dime.xcodeproj">
+               BuildableName = "ourFamilyBudget.app"
+               BlueprintName = "ourFamilyBudget"
+               ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5327D282287C697400F76ADF"
-            BuildableName = "dime.app"
-            BlueprintName = "dime"
-            ReferencedContainer = "container:dime.xcodeproj">
+            BuildableName = "ourFamilyBudget.app"
+            BlueprintName = "ourFamilyBudget"
+            ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -60,7 +60,7 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "TZ"
-            value = "Asia/Hong_Kong"
+            value = "Europe/Rome"
             isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5327D282287C697400F76ADF"
-            BuildableName = "dime.app"
-            BlueprintName = "dime"
-            ReferencedContainer = "container:dime.xcodeproj">
+            BuildableName = "ourFamilyBudget.app"
+            BlueprintName = "ourFamilyBudget"
+            ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
