@@ -8,7 +8,7 @@
 
 // welcome sheet
 
-"dime_name" = "ourFamilyBudget";
+"myfamilybudget_name" = "ourFamilyBudget";
 "welcome_header_1" = "Tieni d'occhio le tue finanze";
 "welcome_subtitle_1" = "Aggiungi un nuovo record in modo semplice ed immediato";
 "welcome_header_2" = "Analizza le tue spese";
