@@ -160,7 +160,7 @@ struct LockBudgetWidgetEntryView: View {
         return String(localized: "\(Int(round((entry.totalSpent / entry.budget.budgetAmount) * 100)))% spent")
     }
 
-    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
+    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currency?.identifier ?? "EUR"
     var currencySymbol: String {
         return Locale.current.localizedCurrencySymbol(forCurrencyCode: currency)!
     }

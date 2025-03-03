@@ -25,7 +25,7 @@ struct ContentView: View {
     // converts category colors to hex codes
     @AppStorage("dataMigration2", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var dataMigration2: Bool = true
 
-    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
+    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currency?.identifier ?? "EUR"
 
     @State var showIntro: Bool = false
     @State var showUpdate: Bool = false

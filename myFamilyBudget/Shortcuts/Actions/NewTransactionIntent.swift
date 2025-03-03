@@ -204,12 +204,21 @@ struct ShortcutTransactionView: View {
 
     @AppStorage("showCents", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var showCents: Bool = true
 
-    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
+    // Definire la proprietà come Locale.Currency
+    @AppStorage("currencyIdentifier", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget"))
+    var currencyIdentifier: String = Locale.current.currency?.identifier ?? "EUR"
+
+    // E poi usarla così quando hai bisogno della valuta
+    var currency: Locale.Currency {
+        return Locale.Currency(currencyIdentifier)
+    }
+    
+//    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
 
     var transactionAmountString: String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .currency
-        numberFormatter.currencyCode = currency
+        numberFormatter.currencyCode = currency.identifier
 
         if showCents {
             numberFormatter.maximumFractionDigits = 2
