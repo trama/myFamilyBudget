@@ -232,7 +232,7 @@
 		5313EC6F28ACE941000EAB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5321E1DB291FE02B00D5A931 /* CategoryCreationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCreationErrors.swift; sourceTree = "<group>"; };
 		5324985428A64DA7007B34D1 /* RecentTransactionsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionsWidget.swift; sourceTree = "<group>"; };
-		5327D283287C697400F76ADF /* ourFamilyBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ourFamilyBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5327D283287C697400F76ADF /* myFamilyBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFamilyBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5327D286287C697400F76ADF /* ourFamilyBudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ourFamilyBudgetApp.swift; sourceTree = "<group>"; };
 		5327D28D287C697C00F76ADF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5327D294287C698900F76ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -446,7 +446,7 @@
 		5327D284287C697400F76ADF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5327D283287C697400F76ADF /* ourFamilyBudget.app */,
+				5327D283287C697400F76ADF /* myFamilyBudget.app */,
 				53B1D18A288ED7E400E28062 /* ExpenditureWidgetExtension.appex */,
 				5313EC5B28ACE941000EAB0C /* BudgetIntent.appex */,
 				5313EC6628ACE941000EAB0C /* BudgetIntentUI.appex */,
@@ -721,9 +721,9 @@
 			productReference = 5313EC6628ACE941000EAB0C /* BudgetIntentUI.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		5327D282287C697400F76ADF /* ourFamilyBudget */ = {
+		5327D282287C697400F76ADF /* myFamilyBudget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5327D291287C697C00F76ADF /* Build configuration list for PBXNativeTarget "ourFamilyBudget" */;
+			buildConfigurationList = 5327D291287C697C00F76ADF /* Build configuration list for PBXNativeTarget "myFamilyBudget" */;
 			buildPhases = (
 				5327D27F287C697400F76ADF /* Sources */,
 				5327D280287C697400F76ADF /* Frameworks */,
@@ -739,7 +739,7 @@
 				5313EC7128ACE941000EAB0C /* PBXTargetDependency */,
 				5313EC7428ACE941000EAB0C /* PBXTargetDependency */,
 			);
-			name = ourFamilyBudget;
+			name = myFamilyBudget;
 			packageProductDependencies = (
 				5327D2E5287C6CC300F76ADF /* Popovers */,
 				53B1D1A7289A60D500E28062 /* CrookedText */,
@@ -751,7 +751,7 @@
 				D6A4DE232D61744400F7F751 /* SwiftUIIntrospect-Static */,
 			);
 			productName = dime;
-			productReference = 5327D283287C697400F76ADF /* ourFamilyBudget.app */;
+			productReference = 5327D283287C697400F76ADF /* myFamilyBudget.app */;
 			productType = "com.apple.product-type.application";
 		};
 		53B1D189288ED7E400E28062 /* ExpenditureWidgetExtension */ = {
@@ -795,7 +795,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5327D27E287C697400F76ADF /* Build configuration list for PBXProject "ourFamilyBudget" */;
+			buildConfigurationList = 5327D27E287C697400F76ADF /* Build configuration list for PBXProject "myFamilyBudget" */;
 			developmentRegion = it;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -819,7 +819,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5327D282287C697400F76ADF /* ourFamilyBudget */,
+				5327D282287C697400F76ADF /* myFamilyBudget */,
 				53B1D189288ED7E400E28062 /* ExpenditureWidgetExtension */,
 				5313EC5A28ACE941000EAB0C /* BudgetIntent */,
 				5313EC6528ACE941000EAB0C /* BudgetIntentUI */,
@@ -1558,7 +1558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5327D27E287C697400F76ADF /* Build configuration list for PBXProject "ourFamilyBudget" */ = {
+		5327D27E287C697400F76ADF /* Build configuration list for PBXProject "myFamilyBudget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5327D28F287C697C00F76ADF /* Debug */,
@@ -1567,7 +1567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5327D291287C697C00F76ADF /* Build configuration list for PBXNativeTarget "ourFamilyBudget" */ = {
+		5327D291287C697C00F76ADF /* Build configuration list for PBXNativeTarget "myFamilyBudget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5327D292287C697C00F76ADF /* Debug */,

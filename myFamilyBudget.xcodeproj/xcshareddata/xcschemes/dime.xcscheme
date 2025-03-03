@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5327D282287C697400F76ADF"
-               BuildableName = "ourFamilyBudget.app"
-               BlueprintName = "ourFamilyBudget"
-               ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
+               BuildableName = "myFamilyBudget.app"
+               BlueprintName = "myFamilyBudget"
+               ReferencedContainer = "container:myFamilyBudget.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5327D282287C697400F76ADF"
-            BuildableName = "ourFamilyBudget.app"
-            BlueprintName = "ourFamilyBudget"
-            ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
+            BuildableName = "myFamilyBudget.app"
+            BlueprintName = "myFamilyBudget"
+            ReferencedContainer = "container:myFamilyBudget.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5327D282287C697400F76ADF"
-            BuildableName = "ourFamilyBudget.app"
-            BlueprintName = "ourFamilyBudget"
-            ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
+            BuildableName = "myFamilyBudget.app"
+            BlueprintName = "myFamilyBudget"
+            ReferencedContainer = "container:myFamilyBudget.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

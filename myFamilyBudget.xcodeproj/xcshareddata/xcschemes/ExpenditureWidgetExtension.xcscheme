@@ -18,7 +18,7 @@
                BlueprintIdentifier = "53B1D189288ED7E400E28062"
                BuildableName = "ExpenditureWidgetExtension.appex"
                BlueprintName = "ExpenditureWidgetExtension"
-               ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
+               ReferencedContainer = "container:myFamilyBudget.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5327D282287C697400F76ADF"
-               BuildableName = "ourFamilyBudget.app"
-               BlueprintName = "ourFamilyBudget"
-               ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
+               BuildableName = "myFamilyBudget.app"
+               BlueprintName = "myFamilyBudget"
+               ReferencedContainer = "container:myFamilyBudget.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -66,16 +66,16 @@
             BlueprintIdentifier = "53B1D189288ED7E400E28062"
             BuildableName = "ExpenditureWidgetExtension.appex"
             BlueprintName = "ExpenditureWidgetExtension"
-            ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
+            ReferencedContainer = "container:myFamilyBudget.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5327D282287C697400F76ADF"
-            BuildableName = "ourFamilyBudget.app"
-            BlueprintName = "ourFamilyBudget"
-            ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
+            BuildableName = "myFamilyBudget.app"
+            BlueprintName = "myFamilyBudget"
+            ReferencedContainer = "container:myFamilyBudget.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <EnvironmentVariables>
@@ -109,9 +109,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5327D282287C697400F76ADF"
-            BuildableName = "ourFamilyBudget.app"
-            BlueprintName = "ourFamilyBudget"
-            ReferencedContainer = "container:ourFamilyBudget.xcodeproj">
+            BuildableName = "myFamilyBudget.app"
+            BlueprintName = "myFamilyBudget"
+            ReferencedContainer = "container:myFamilyBudget.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
