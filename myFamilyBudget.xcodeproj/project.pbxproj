@@ -328,6 +328,11 @@
 		53D6BDE02AF73FAB00F5728E /* SettingsSubviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSubviewModifier.swift; sourceTree = "<group>"; };
 		53E832E42B0A2CAF000CBBA0 /* InsightsSummaryBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsSummaryBlock.swift; sourceTree = "<group>"; };
 		53E832E62B0B067B000CBBA0 /* TransactionCategoryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCategoryPicker.swift; sourceTree = "<group>"; };
+		7A07919A2D7226E200A973D4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7A07919B2D7226E200A973D4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = it; path = it.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		7A07919C2D7226E200A973D4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = it; path = it.lproj/ExpenditureWidgetExtension.entitlements; sourceTree = "<group>"; };
+		7A07919D2D7226E200A973D4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = it; path = it.lproj/BudgetIntentUI.entitlements; sourceTree = "<group>"; };
+		7A07919E2D72281700A973D4 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/MainInterface.strings"; sourceTree = "<group>"; };
 		7A10D7D72D7126FE0070A530 /* BudgetIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetIntent.entitlements; sourceTree = "<group>"; };
 		7A10D7D82D7127020070A530 /* BudgetIntentRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetIntentRelease.entitlements; sourceTree = "<group>"; };
 		7A10D7E52D712D1C0070A530 /* WidgetConfiguration.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetConfiguration.intentdefinition; sourceTree = "<group>"; };
@@ -791,12 +796,13 @@
 				};
 			};
 			buildConfigurationList = 5327D27E287C697400F76ADF /* Build configuration list for PBXProject "ourFamilyBudget" */;
-			developmentRegion = "en-GB";
+			developmentRegion = it;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 				"en-GB",
+				it,
 			);
 			mainGroup = 5327D27A287C697400F76ADF;
 			packageReferences = (
@@ -1070,6 +1076,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5313EC6D28ACE941000EAB0C /* Base */,
+				7A07919E2D72281700A973D4 /* en-GB */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -1078,6 +1085,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D6A4DE282D6180B600F7F751 /* en-GB */,
+				7A07919A2D7226E200A973D4 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1086,6 +1094,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D6A4DE292D6180B600F7F751 /* en-GB */,
+				7A07919B2D7226E200A973D4 /* it */,
 			);
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
@@ -1094,6 +1103,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7A10D7ED2D712D680070A530 /* en-GB */,
+				7A07919C2D7226E200A973D4 /* it */,
 			);
 			name = ExpenditureWidgetExtension.entitlements;
 			sourceTree = SOURCE_ROOT;
@@ -1104,6 +1114,7 @@
 				7ADA95582D712036007204DF /* en-GB */,
 				7ADA955A2D712049007204DF /* Base */,
 				7ADA955B2D71204A007204DF /* en */,
+				7A07919D2D7226E200A973D4 /* it */,
 			);
 			name = BudgetIntentUI.entitlements;
 			sourceTree = "<group>";

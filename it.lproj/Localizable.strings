@@ -9,30 +9,30 @@
 // welcome sheet
 
 "dime_name" = "ourFamilyBudget";
-"welcome_header_1" = "Tieni d'occhio le tue finanze";
-"welcome_subtitle_1" = "Aggiungi un nuovo record in modo semplice ed immediato";
-"welcome_header_2" = "Analizza le tue spese";
+"welcome_header_1" = "Track your finances";
+"welcome_subtitle_1" = "Add new entries in a simple, straightforward manner";
+"welcome_header_2" = "Analyse your expenditure";
 "welcome_subtitle_2" = "Draw insights from your spending over various time periods";
-"welcome_header_3" = "Rimani nel budget";
-"welcome_subtitle_3" = "Imposta limiti per categoria e di tempo per limitare le tue spese";
-"Get Started" = "Iniziamo";
+"welcome_header_3" = "Stick to budgets";
+"welcome_subtitle_3" = "Set categorical and time-based goals to limit your spending";
+"Get Started" = "Get Started";
 
 // categories
 
-"Categories" = "Categorie";
+"Categories" = "Categories";
 "no_income_categories" = "No income categories found, click the 'New' button to add some";
 "no_expense_categories" = "No expense categories found, click the 'New' button to add some";
-"Suggestions Hidden" = "Suggerimenti nascosti";
-"Successfully Edited" = "Modificato correttamente";
-"INCOME CATEGORIES" = "CATEGORIE ENTRATE";
-"EXPENSE CATEGORIES" = "CATEGORIE SPESE";
-"SUGGESTED" = "SUGGERITI";
-"Income Category" = "Categoria di entrata";
-"Expense Category" = "Categoria di spesa";
-"New" = "Nuovo";
-"Expense" = "Spesa";
-"Income" = "Entrata";
-"Delete" = "Rimuovi";
+"Suggestions Hidden" = "Suggestions Hidden";
+"Successfully Edited" = "Successfully Edited";
+"INCOME CATEGORIES" = "INCOME CATEGORIES";
+"EXPENSE CATEGORIES" = "EXPENSE CATEGORIES";
+"SUGGESTED" = "SUGGESTED";
+"Income Category" = "Income Category";
+"Expense Category" = "Expense Category";
+"New" = "New";
+"Expense" = "Expense";
+"Income" = "Income";
+"Delete" = "Delete";
 "Cancel" = "Cancel";
 "Delete '%@'?" = "Delete '%@'?";
 "This action cannot be undone, and all %@ transactions would be deleted." = "This action cannot be undone, and all %@ transactions would be deleted.";
