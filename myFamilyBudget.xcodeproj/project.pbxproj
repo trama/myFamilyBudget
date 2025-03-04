@@ -142,19 +142,15 @@
 		53E832E72B0B067B000CBBA0 /* TransactionCategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E832E62B0B067B000CBBA0 /* TransactionCategoryPicker.swift */; };
 		53EB930E28A65A570026BE28 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5327D2B5287C6AFB00F76ADF /* Color.swift */; };
 		53EB930F28A65B250026BE28 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B1D1A4289383B100E28062 /* FontExtension.swift */; };
-		7A10D7DB2D7127500070A530 /* BudgetIntentUI.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA95592D712036007204DF /* BudgetIntentUI.entitlements */; };
 		7A10D7E62D712D1C0070A530 /* WidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7A10D7E52D712D1C0070A530 /* WidgetConfiguration.intentdefinition */; };
 		7A10D7E72D712D1C0070A530 /* WidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7A10D7E52D712D1C0070A530 /* WidgetConfiguration.intentdefinition */; };
 		7A10D7E82D712D1C0070A530 /* WidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7A10D7E52D712D1C0070A530 /* WidgetConfiguration.intentdefinition */; };
 		7A10D7E92D712D1C0070A530 /* WidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7A10D7E52D712D1C0070A530 /* WidgetConfiguration.intentdefinition */; };
-		7A10D7EF2D712D680070A530 /* ExpenditureWidgetExtension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 7A10D7EE2D712D680070A530 /* ExpenditureWidgetExtension.entitlements */; };
-		7A10D7F02D712D680070A530 /* ExpenditureWidgetExtension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 7A10D7EE2D712D680070A530 /* ExpenditureWidgetExtension.entitlements */; };
 		7A10D7F42D71311F0070A530 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A10D7F32D71311F0070A530 /* UnlockManager.swift */; };
 		7A566F382D75EC340050EFE1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A566F372D75EC340050EFE1 /* Localizable.xcstrings */; };
 		7A566F392D75EC340050EFE1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A566F372D75EC340050EFE1 /* Localizable.xcstrings */; };
 		7A566F3A2D75EC340050EFE1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A566F372D75EC340050EFE1 /* Localizable.xcstrings */; };
 		7A566F3B2D75EC340050EFE1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A566F372D75EC340050EFE1 /* Localizable.xcstrings */; };
-		7ADB50902D76FEC0006A233B /* spese.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7ADB508F2D76FEC0006A233B /* spese.csv */; };
 		AE5B3D792AEE99E000AB364E /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B3D782AEE99E000AB364E /* NumberPad.swift */; };
 		AEADEF6F2AE94DA3006EB614 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEADEF6E2AE94DA3006EB614 /* Toast.swift */; };
 		AEADEF712AE94DA8006EB614 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEADEF702AE94DA8006EB614 /* BackButton.swift */; };
@@ -323,23 +319,14 @@
 		53D6BDE02AF73FAB00F5728E /* SettingsSubviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSubviewModifier.swift; sourceTree = "<group>"; };
 		53E832E42B0A2CAF000CBBA0 /* InsightsSummaryBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsSummaryBlock.swift; sourceTree = "<group>"; };
 		53E832E62B0B067B000CBBA0 /* TransactionCategoryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCategoryPicker.swift; sourceTree = "<group>"; };
-		7A07919C2D7226E200A973D4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = it; path = it.lproj/ExpenditureWidgetExtension.entitlements; sourceTree = "<group>"; };
-		7A07919D2D7226E200A973D4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = it; path = it.lproj/BudgetIntentUI.entitlements; sourceTree = "<group>"; };
-		7A10D7D72D7126FE0070A530 /* BudgetIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetIntent.entitlements; sourceTree = "<group>"; };
-		7A10D7D82D7127020070A530 /* BudgetIntentRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetIntentRelease.entitlements; sourceTree = "<group>"; };
 		7A10D7E52D712D1C0070A530 /* WidgetConfiguration.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetConfiguration.intentdefinition; sourceTree = "<group>"; };
-		7A10D7ED2D712D680070A530 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "en-GB"; path = "en-GB.lproj/ExpenditureWidgetExtension.entitlements"; sourceTree = "<group>"; };
 		7A10D7F32D71311F0070A530 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
-		7A566F2F2D75E1FB0050EFE1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = it; path = it.lproj/myFamilyBudget.entitlements; sourceTree = "<group>"; };
-		7A566F312D75E1FF0050EFE1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "en-GB"; path = "en-GB.lproj/myFamilyBudget.entitlements"; sourceTree = "<group>"; };
-		7A566F322D75E2DD0050EFE1 /* myFamilyBudget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myFamilyBudget.entitlements; sourceTree = "<group>"; };
-		7A566F332D75E32D0050EFE1 /* ExpenditureWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpenditureWidgetExtension.entitlements; sourceTree = "<group>"; };
-		7A566F342D75E3520050EFE1 /* BudgetIntentUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetIntentUI.entitlements; sourceTree = "<group>"; };
 		7A566F372D75EC340050EFE1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		7A566F3D2D75EEA00050EFE1 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/MainInterface.xcstrings; sourceTree = "<group>"; };
-		7ADA95582D712036007204DF /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "en-GB"; path = "en-GB.lproj/BudgetIntentUI.entitlements"; sourceTree = "<group>"; };
-		7ADA955A2D712049007204DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Base; path = Base.lproj/BudgetIntentUI.entitlements; sourceTree = "<group>"; };
-		7ADB508F2D76FEC0006A233B /* spese.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = spese.csv; sourceTree = "<group>"; };
+		7AC54CCB2D773EC9001FAEF6 /* BudgetIntentUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetIntentUI.entitlements; sourceTree = "<group>"; };
+		7AC54CCC2D773EF9001FAEF6 /* BudgetIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetIntent.entitlements; sourceTree = "<group>"; };
+		7AC54CCD2D773F21001FAEF6 /* myFamilyBudget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myFamilyBudget.entitlements; sourceTree = "<group>"; };
+		7AC54CD02D7740F1001FAEF6 /* ExpenditureWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpenditureWidgetExtension.entitlements; sourceTree = "<group>"; };
 		AE5B3D782AEE99E000AB364E /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
 		AEADEF6E2AE94DA3006EB614 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		AEADEF702AE94DA8006EB614 /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -406,8 +393,7 @@
 		5313EC5E28ACE941000EAB0C /* BudgetIntent */ = {
 			isa = PBXGroup;
 			children = (
-				7A10D7D82D7127020070A530 /* BudgetIntentRelease.entitlements */,
-				7A10D7D72D7126FE0070A530 /* BudgetIntent.entitlements */,
+				7AC54CCC2D773EF9001FAEF6 /* BudgetIntent.entitlements */,
 				5313EC5F28ACE941000EAB0C /* IntentHandler.swift */,
 				5313EC6128ACE941000EAB0C /* Info.plist */,
 			);
@@ -417,8 +403,7 @@
 		5313EC6928ACE941000EAB0C /* BudgetIntentUI */ = {
 			isa = PBXGroup;
 			children = (
-				7A566F342D75E3520050EFE1 /* BudgetIntentUI.entitlements */,
-				7ADA95592D712036007204DF /* BudgetIntentUI.entitlements */,
+				7AC54CCB2D773EC9001FAEF6 /* BudgetIntentUI.entitlements */,
 				5313EC6A28ACE941000EAB0C /* IntentViewController.swift */,
 				5313EC6C28ACE941000EAB0C /* MainInterface.storyboard */,
 				5313EC6F28ACE941000EAB0C /* Info.plist */,
@@ -429,9 +414,8 @@
 		5327D27A287C697400F76ADF = {
 			isa = PBXGroup;
 			children = (
-				7A566F332D75E32D0050EFE1 /* ExpenditureWidgetExtension.entitlements */,
 				7A566F372D75EC340050EFE1 /* Localizable.xcstrings */,
-				7A10D7EE2D712D680070A530 /* ExpenditureWidgetExtension.entitlements */,
+				7AC54CD02D7740F1001FAEF6 /* ExpenditureWidgetExtension.entitlements */,
 				5327D285287C697400F76ADF /* myFamilyBudget */,
 				53B1D18F288ED7E500E28062 /* ExpenditureWidget */,
 				5313EC5E28ACE941000EAB0C /* BudgetIntent */,
@@ -455,11 +439,9 @@
 		5327D285287C697400F76ADF /* myFamilyBudget */ = {
 			isa = PBXGroup;
 			children = (
-				7A566F322D75E2DD0050EFE1 /* myFamilyBudget.entitlements */,
-				7A566F302D75E1FB0050EFE1 /* myFamilyBudget.entitlements */,
+				7AC54CCD2D773F21001FAEF6 /* myFamilyBudget.entitlements */,
 				5327D2E7287C6DC200F76ADF /* Info.plist */,
 				53756F622AC3C25E0065D0C2 /* sample.csv */,
-				7ADB508F2D76FEC0006A233B /* spese.csv */,
 				53A4147828B6625D008C30E7 /* AppDelegate.swift */,
 				53A4147A28B66265008C30E7 /* SceneDelegate.swift */,
 				5327D286287C697400F76ADF /* myFamilyBudgetApp.swift */,
@@ -729,7 +711,6 @@
 				5327D280287C697400F76ADF /* Frameworks */,
 				5327D281287C697400F76ADF /* Resources */,
 				53B1D19B288ED87000E28062 /* Embed Foundation Extensions */,
-				AE22D66A2AE62F4700F0A4F9 /* Run Script */,
 				D6A4DE1B2D6153C200F7F751 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -841,7 +822,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A566F3B2D75EC340050EFE1 /* Localizable.xcstrings in Resources */,
-				7A10D7DB2D7127500070A530 /* BudgetIntentUI.entitlements in Resources */,
 				5313EC6E28ACE941000EAB0C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -850,11 +830,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A10D7EF2D712D680070A530 /* ExpenditureWidgetExtension.entitlements in Resources */,
 				7A566F382D75EC340050EFE1 /* Localizable.xcstrings in Resources */,
 				5327D28E287C697C00F76ADF /* Preview Assets.xcassets in Resources */,
 				5327D295287C698900F76ADF /* Assets.xcassets in Resources */,
-				7ADB50902D76FEC0006A233B /* spese.csv in Resources */,
 				53756F632AC3C25E0065D0C2 /* sample.csv in Resources */,
 				5327D2E0287C6B7D00F76ADF /* DeviceModels.json in Resources */,
 			);
@@ -864,7 +842,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A10D7F02D712D680070A530 /* ExpenditureWidgetExtension.entitlements in Resources */,
 				533182D328A0D61D00DEBFA3 /* Assets.xcassets in Resources */,
 				7A566F392D75EC340050EFE1 /* Localizable.xcstrings in Resources */,
 				53B1D193288ED87000E28062 /* Assets.xcassets in Resources */,
@@ -872,27 +849,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AE22D66A2AE62F4700F0A4F9 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5313EC5728ACE941000EAB0C /* Sources */ = {
@@ -1078,45 +1034,15 @@
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
-		7A10D7EE2D712D680070A530 /* ExpenditureWidgetExtension.entitlements */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A10D7ED2D712D680070A530 /* en-GB */,
-				7A07919C2D7226E200A973D4 /* it */,
-			);
-			name = ExpenditureWidgetExtension.entitlements;
-			sourceTree = SOURCE_ROOT;
-		};
-		7A566F302D75E1FB0050EFE1 /* myFamilyBudget.entitlements */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A566F2F2D75E1FB0050EFE1 /* it */,
-				7A566F312D75E1FF0050EFE1 /* en-GB */,
-			);
-			name = myFamilyBudget.entitlements;
-			sourceTree = "<group>";
-		};
-		7ADA95592D712036007204DF /* BudgetIntentUI.entitlements */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7ADA95582D712036007204DF /* en-GB */,
-				7ADA955A2D712049007204DF /* Base */,
-				7A07919D2D7226E200A973D4 /* it */,
-			);
-			name = BudgetIntentUI.entitlements;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5313EC7628ACE941000EAB0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BudgetIntent/BudgetIntent.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4A2UPSA95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BudgetIntent/Info.plist;
@@ -1128,7 +1054,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedetx.myFamilyBudget.BudgetIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1137,7 +1062,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1146,11 +1070,9 @@
 		5313EC7728ACE941000EAB0C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BudgetIntent/BudgetIntent.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4A2UPSA95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BudgetIntent/Info.plist;
@@ -1162,7 +1084,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedetx.myFamilyBudget.BudgetIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1171,7 +1092,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1183,7 +1103,6 @@
 				CODE_SIGN_ENTITLEMENTS = BudgetIntentUI/BudgetIntentUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4A2UPSA95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BudgetIntentUI/Info.plist;
@@ -1195,7 +1114,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedetx.myFamilyBudget.BudgetIntentUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1203,9 +1121,8 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1215,7 +1132,6 @@
 				CODE_SIGN_ENTITLEMENTS = BudgetIntentUI/BudgetIntentUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4A2UPSA95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BudgetIntentUI/Info.plist;
@@ -1227,7 +1143,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedetx.myFamilyBudget.BudgetIntentUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1235,9 +1150,8 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1245,10 +1159,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_New;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -1275,12 +1190,14 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				CURRENT_PROJECT_VERSION = 2.2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M4A2UPSA95;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1294,16 +1211,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MARKETING_VERSION = 2.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1311,10 +1227,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_New;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -1341,12 +1258,13 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M4A2UPSA95;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1354,16 +1272,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MARKETING_VERSION = 2.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1372,13 +1289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon4 AppIcon3 AppIcon2 AppIcon1";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = myFamilyBudget/myFamilyBudget.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myFamilyBudget/Preview Content\"";
 				DEVELOPMENT_TEAM = M4A2UPSA95;
 				ENABLE_PREVIEWS = YES;
@@ -1398,7 +1313,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "1-2.1.4";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedetx.myFamilyBudget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1406,7 +1320,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1416,13 +1329,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon4 AppIcon3 AppIcon2 AppIcon1";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = myFamilyBudget/myFamilyBudget.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myFamilyBudget/Preview Content\"";
 				DEVELOPMENT_TEAM = M4A2UPSA95;
 				ENABLE_PREVIEWS = YES;
@@ -1442,7 +1353,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "1-2.1.4";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedetx.myFamilyBudget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1450,7 +1360,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1459,14 +1368,12 @@
 		53B1D199288ED87000E28062 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = ExpenditureWidgetExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4A2UPSA95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExpenditureWidget/Info.plist;
@@ -1478,7 +1385,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedetx.myFamilyBudget.ExpenditureWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1486,7 +1392,6 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1495,14 +1400,12 @@
 		53B1D19A288ED87000E28062 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = ExpenditureWidgetExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4A2UPSA95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExpenditureWidget/Info.plist;
@@ -1514,7 +1417,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedetx.myFamilyBudget.ExpenditureWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1522,7 +1424,6 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

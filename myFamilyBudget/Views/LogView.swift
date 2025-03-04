@@ -81,15 +81,15 @@ struct LogView: View {
                     .accessibility(hidden: true)
 
                 Text("Your Log is Empty")
-                    .font(.system(.title2, design: .rounded).weight(.medium))
-//                    .font(.system(size: 23.5, weight: .medium, design: .rounded))
+                    .font(.system(.title2).weight(.medium))
+//                    .font(.system(size: 23.5, weight: .medium))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.PrimaryText.opacity(0.8))
                     
 
                 Text("Press the plus button\nto add your first entry")
-                    .font(.system(.body, design: .rounded).weight(.medium))
-//                    .font(.system(size: 18, weight: .medium, design: .rounded))
+                    .font(.system(.body).weight(.medium))
+//                    .font(.system(size: 18, weight: .medium))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.SubtitleText.opacity(0.7))
                     .padding(.top, 50.0)
@@ -108,7 +108,7 @@ struct LogView: View {
                         } label: {
                             Image(systemName: "magnifyingglass")
 //                                .font(.system(size: 23, weight: .regular))
-                                .font(.system(.title2, design: .rounded).weight(.regular))
+                                .font(.system(.title2).weight(.regular))
                                 .dynamicTypeSize(...DynamicTypeSize.xxLarge)
                                 .foregroundColor(Color.DarkIcon)
                                 .padding(5)
@@ -127,7 +127,7 @@ struct LogView: View {
                         switch filter {
                         case .all:
 //                            Text(navBarText)
-//                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+//                            .font(.system(size: 16, weight: .semibold))
 //                            .opacity(0)
                             EmptyView()
                         case .category:
@@ -152,7 +152,7 @@ struct LogView: View {
                             showFilter = true
                         } label: {
                             Image(systemName: filter == .all ? "triangle" : "triangle.tophalf.filled")
-                                .font(.system(.title2, design: .rounded).weight(.regular))
+                                .font(.system(.title2).weight(.regular))
                                 .dynamicTypeSize(...DynamicTypeSize.xxLarge)
                                 .foregroundColor(Color.DarkIcon)
                                 .rotationEffect(Angle(degrees: 180))
@@ -327,7 +327,7 @@ struct LogView: View {
     func filterTagView(text: LocalizedStringKey) -> some View {
         HStack(spacing: 10) {
             Text(text)
-                .font(.system(.body, design: .rounded).weight(.medium))
+                .font(.system(.body).weight(.medium))
                 .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
 
             Button {
@@ -338,7 +338,7 @@ struct LogView: View {
                 Image(systemName: "xmark")
 //                    .resizable()
 //                    .frame(width: 11, height: 11)
-                    .font(.system(.caption, design: .rounded).weight(.regular))
+                    .font(.system(.caption).weight(.regular))
                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                     .foregroundColor(Color.PrimaryText.opacity(0.7))
             }
@@ -347,7 +347,7 @@ struct LogView: View {
         .padding(4)
         .padding(.horizontal, 6)
         .background(Color.SecondaryBackground, in: RoundedRectangle(cornerRadius: 9, style: .continuous))
-//        .font(.system(size: 17, weight: .medium, design: .rounded))
+//        .font(.system(size: 17, weight: .medium))
         .foregroundColor(Color.PrimaryText)
     }
 }
@@ -394,11 +394,11 @@ struct NumberView: AnimatableModifier {
         HStack(alignment: .lastTextBaseline, spacing: 2) {
             Group {
                 Text(netTotal ? (positive ? "+\(currencySymbol)" : "-\(currencySymbol)") : currencySymbol)
-                    .font(.system(.largeTitle, design: .rounded))
+                    .font(.system(.largeTitle))
                     .foregroundColor(Color.SubtitleText) +
 
                 Text("\(number, specifier: showCents  ? "%.2f" : "%.0f")")
-                    .font(.system(size: fontSize, weight: .regular, design: .rounded))
+                    .font(.system(size: fontSize, weight: .regular))
                     .foregroundColor(Color.PrimaryText)
             }
         }
@@ -512,7 +512,7 @@ struct LogInsightsView: View {
             VStack(spacing: 2) {
                 HStack(spacing: 4) {
                     Text(LocalizedStringKey(headingText))
-                        .font(.system(.body, design: .rounded).weight(.medium))
+                        .font(.system(.body).weight(.medium))
                         .foregroundColor(Color.PrimaryText.opacity(0.9))
                     Button {
                         showMenu1 = true
@@ -520,7 +520,7 @@ struct LogInsightsView: View {
                         Text(LocalizedStringKey(subtitleText[timeframe - 1]))
                             .padding(2)
                             .padding(.horizontal, 6)
-                            .font(.system(.body, design: .rounded).weight(.medium))
+                            .font(.system(.body).weight(.medium))
                             .foregroundColor(Color.PrimaryText.opacity(9))
                             .overlay(Capsule().stroke(Color.Outline, lineWidth: 1.3))
                     }
@@ -573,20 +573,20 @@ struct LogInsightsView: View {
                 HStack {
 //                    if showCents {
 //                        Text("+\(totalIncome, specifier: "%.2f")")
-//                            .font(.system(size: 18, weight: .medium, design: .rounded))
+//                            .font(.system(size: 18, weight: .medium))
 //                            .foregroundColor(Color.IncomeGreen)
 //                            .lineLimit(1)
 //                    } else {
 //                        Text("+\(Int(floor(totalIncome)))")
-//                            .font(.system(size: 18, weight: .medium, design: .rounded))
+//                            .font(.system(size: 18, weight: .medium))
 //                            .foregroundColor(Color.IncomeGreen)
 //                            .lineLimit(1)
 //                    }
 
                     Text("+\(formatNumber(showCents: showCents, number: totalIncome))")
-                        .font(.system(.title2, design: .rounded).weight(.medium))
+                        .font(.system(.title2).weight(.medium))
                         .minimumScaleFactor(0.5)
-//                        .font(.system(size: 18, weight: .medium, design: .rounded))
+//                        .font(.system(size: 18, weight: .medium))
                         .foregroundColor(Color.IncomeGreen)
                         .lineLimit(1)
 
@@ -596,20 +596,20 @@ struct LogInsightsView: View {
                         .foregroundColor(Color.Outline)
 
                     Text("-\(formatNumber(showCents: showCents, number: totalSpent))")
-                        .font(.system(.title2, design: .rounded).weight(.medium))
+                        .font(.system(.title2).weight(.medium))
                         .minimumScaleFactor(0.5)
-//                        .font(.system(size: 18, weight: .medium, design: .rounded))
+//                        .font(.system(size: 18, weight: .medium))
                         .foregroundColor(Color.AlertRed)
                         .lineLimit(1)
 
 //                    if showCents {
 //                        Text("-\(totalSpent, specifier: "%.2f")")
-//                            .font(.system(size: 18, weight: .medium, design: .rounded))
+//                            .font(.system(size: 18, weight: .medium))
 //                            .foregroundColor(Color.AlertRed)
 //                            .lineLimit(1)
 //                    } else {
 //                        Text("-\(Int(floor(totalSpent)))")
-//                            .font(.system(size: 18, weight: .medium, design: .rounded))
+//                            .font(.system(size: 18, weight: .medium))
 //                            .foregroundColor(Color.AlertRed)
 //                            .lineLimit(1)
 //                    }
@@ -658,7 +658,7 @@ struct SearchView: View {
                 HStack {
                     Image(systemName: "magnifyingglass")
 //                        .font(.system(size: 17))
-                        .font(.system(.body, design: .rounded).weight(.regular))
+                        .font(.system(.body).weight(.regular))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                         .foregroundColor(Color.DarkIcon.opacity(0.8))
                         .accessibility(hidden: true)
@@ -666,9 +666,9 @@ struct SearchView: View {
                         .introspect(.textField, on: .iOS(.v13, .v14, .v15, .v16, .v17, .v18)) { textField in
                             textField.becomeFirstResponder()
                         }
-                        .font(.system(.body, design: .rounded).weight(.regular))
+                        .font(.system(.body).weight(.regular))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                        .font(.system(size: 17, weight: .regular, design: .rounded))
+//                        .font(.system(size: 17, weight: .regular))
                         .foregroundColor(Color.PrimaryText)
 
                     if searchQuery != "" {
@@ -676,7 +676,7 @@ struct SearchView: View {
                             searchQuery = ""
                         } label: {
                             Image(systemName: "xmark.circle.fill")
-                                .font(.system(.subheadline, design: .rounded).weight(.regular))
+                                .font(.system(.subheadline).weight(.regular))
                                 .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
 //                                .font(.system(size: 15))
                                 .foregroundColor(Color.SubtitleText)
@@ -693,9 +693,9 @@ struct SearchView: View {
                 } label: {
                     Text("Cancel")
                         .foregroundColor(Color.PrimaryText)
-                        .font(.system(.body, design: .rounded).weight(.medium))
+                        .font(.system(.body).weight(.medium))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                        .font(.system(size: 18, weight: .medium, design: .rounded))
+//                        .font(.system(size: 18, weight: .medium))
                 }
             }
         }
@@ -717,14 +717,14 @@ struct FilteredSearchView: View {
                         .font(.system(size: 50))
                         .padding(.bottom, 15)
                     Text("No entries found.")
-                        .font(.system(.title3, design: .rounded).weight(.medium))
+                        .font(.system(.title3).weight(.medium))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                        .font(.system(size: 18, weight: .medium, design: .rounded))
+//                        .font(.system(size: 18, weight: .medium))
                         .foregroundColor(Color.PrimaryText)
                     Text("Try a different search query!")
-                        .font(.system(.subheadline, design: .rounded).weight(.regular))
+                        .font(.system(.subheadline).weight(.regular))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                        .font(.system(size: 14, weight: .regular, design: .rounded))
+//                        .font(.system(size: 14, weight: .regular))
                         .foregroundColor(Color.SubtitleText)
                 }
                 .frame(alignment: .center)
@@ -786,20 +786,20 @@ struct TimePickerView: View {
             ForEach(timeframes.indices, id: \.self) { index in
                 HStack {
                     Text(LocalizedStringKey(timeframes[index]))
-                        .font(.system(.body, design: .rounded).weight(.medium))
+                        .font(.system(.body).weight(.medium))
                         .dynamicTypeSize(...DynamicTypeSize.xxLarge)
 
                     Spacer()
 
                     if holdingTimeframe == index + 1 {
                         Image(systemName: "checkmark")
-                            .font(.system(.footnote, design: .rounded).weight(.medium))
+                            .font(.system(.footnote).weight(.medium))
                             .dynamicTypeSize(...DynamicTypeSize.xxLarge)
 //                            .font(.system(size: 14, weight: .medium))
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-//                .font(.system(size: 18, weight: .medium, design: .rounded))
+//                .font(.system(size: 18, weight: .medium))
                 .padding(5)
                 .background {
                     if holdingTimeframe == index + 1 {
@@ -859,19 +859,19 @@ struct FilterPickerView: View {
                 HStack {
                     Image(systemName: FilterType.imageDictionary[filter] ?? "")
 //                        .font(.system(size: 16))
-                        .font(.system(.callout, design: .rounded).weight(.regular))
+                        .font(.system(.callout).weight(.regular))
                         .dynamicTypeSize(...DynamicTypeSize.xxLarge)
                         .frame(width: 20)
                     Text(LocalizedStringKey(filter.rawValue))
-//                        .font(.system(size: 18, weight: .medium, design: .rounded))
-                        .font(.system(.body, design: .rounded).weight(.medium))
+//                        .font(.system(size: 18, weight: .medium))
+                        .font(.system(.body).weight(.medium))
                         .dynamicTypeSize(...DynamicTypeSize.xxLarge)
                         .lineLimit(1)
                     Spacer()
 
                     if filterType == filter {
                         Image(systemName: "checkmark")
-                            .font(.system(.footnote, design: .rounded).weight(.medium))
+                            .font(.system(.footnote).weight(.medium))
                             .dynamicTypeSize(...DynamicTypeSize.xxLarge)
 //                            .font(.system(size: 14, weight: .medium))
                     }
@@ -963,7 +963,8 @@ struct ListView: View {
 
     @AppStorage("showCents", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var showCents: Bool = true
 
-    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
+    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currency?.identifier ?? "EUR"
+    
     var currencySymbol: String {
         return Locale.current.localizedCurrencySymbol(forCurrencyCode: currency)!
     }
@@ -987,9 +988,9 @@ struct ListView: View {
                             Text(filtered.string)
                                 .layoutPriority(1)
                         }
-                        .font(.system(.callout, design: .rounded).weight(.semibold))
+                        .font(.system(.callout).weight(.semibold))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                        .font(.system(size: 14, weight: .semibold, design: .rounded))
+//                        .font(.system(size: 14, weight: .semibold))
                         .foregroundColor(Color.SubtitleText)
                         .accessibilityElement(children: .ignore)
                         .accessibilityLabel("\(currencySymbol)\(String(format: "%.2f", filtered.string)) was spent \(dateConverterAccessibilityLabel(date: day.id ?? Date.now))")
@@ -1144,9 +1145,9 @@ struct FutureListView: View {
 
                         Text(totalString)
                     }
-                    .font(.system(.callout, design: .rounded).weight(.semibold))
+                    .font(.system(.callout).weight(.semibold))
                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                    .font(.system(size: 14, weight: .semibold, design: .rounded))
+//                    .font(.system(size: 14, weight: .semibold))
                     .foregroundColor(Color.SubtitleText)
                     .accessibilityElement(children: .ignore)
 
@@ -1240,7 +1241,7 @@ struct SingleTransactionView: View {
         ZStack(alignment: .trailing) {
             Image(systemName: "xmark")
 //                .font(.system(size: 13, weight: .bold))
-                .font(.system(.caption, design: .rounded).weight(.bold))
+                .font(.system(.caption).weight(.bold))
                 .dynamicTypeSize(...DynamicTypeSize.xLarge)
                 .foregroundColor(deleteConfirm ? Color.AlertRed : Color.SubtitleText)
                 .padding(5)
@@ -1270,13 +1271,13 @@ struct SingleTransactionView: View {
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(transaction.wrappedNote)
-                        .font(.system(.body, design: .rounded).weight(.medium))
+                        .font(.system(.body).weight(.medium))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                         .foregroundColor(future ? Color.SubtitleText : Color.PrimaryText)
                         .lineLimit(1)
 
                     Text(getSubtitle())
-                        .font(.system(.subheadline, design: .rounded).weight(.medium))
+                        .font(.system(.subheadline).weight(.medium))
                         .dynamicTypeSize(...DynamicTypeSize.xxLarge)
                         .foregroundColor(future ? Color.EvenLighterText : Color.SubtitleText)
                         .lineLimit(1)
@@ -1285,7 +1286,7 @@ struct SingleTransactionView: View {
 
                 if transaction.income {
                     Text("+\(transactionAmountString)")
-                        .font(.system(.title3, design: .rounded).weight(.medium))
+                        .font(.system(.title3).weight(.medium))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                         .foregroundColor(future ? Color.SubtitleText : Color.IncomeGreen)
                         .minimumScaleFactor(0.7)
@@ -1294,7 +1295,7 @@ struct SingleTransactionView: View {
 
                 } else {
                     Text("-\(transactionAmountString)")
-                        .font(.system(.title3, design: .rounded).weight(.medium))
+                        .font(.system(.title3).weight(.medium))
                         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                         .foregroundColor(future ? Color.SubtitleText : Color.PrimaryText)
                         .minimumScaleFactor(0.7)
@@ -1519,16 +1520,16 @@ struct DeleteTransactionAlert: View {
         if let unwrappedToDelete = transactionManager.toDelete {
             VStack(alignment: .leading, spacing: 1.5) {
                 Text(stopRecurring ? "Stop Recurring?" : "Delete '\(unwrappedToDelete.wrappedNote)'?")
-                    .font(.system(.title2, design: .rounded).weight(.medium))
+                    .font(.system(.title2).weight(.medium))
                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                    .font(.system(size: 25, weight: .medium, design: .rounded))
+//                    .font(.system(size: 25, weight: .medium))
                     .foregroundColor(.PrimaryText)
                     .accessibilityLabel("Delete \(unwrappedToDelete.wrappedNote) transaction confirmation. This action cannot be undone.")
 
                 Text(stopRecurring ? "The transaction will no longer be automatically logged." : "This action cannot be undone.")
-                    .font(.system(.title3, design: .rounded).weight(.medium))
+                    .font(.system(.title3).weight(.medium))
                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                    .font(.system(size: 20, weight: .medium, design: .rounded))
+//                    .font(.system(size: 20, weight: .medium))
                     .foregroundColor(.SubtitleText)
                     .padding(.bottom, 25)
                     .accessibility(hidden: true)
@@ -1748,15 +1749,15 @@ struct NoResultsView: View {
                 Spacer()
 
                 Image(systemName: "tray.full.fill")
-                    .font(.system(.largeTitle, design: .rounded))
+                    .font(.system(.largeTitle))
                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                    .font(.system(size: 38, weight: .regular, design: .rounded))
+//                    .font(.system(size: 38, weight: .regular))
                     .foregroundColor(Color.SubtitleText)
 
                 Text("No entries found.")
-                    .font(.system(.title3, design: .rounded).weight(.medium))
+                    .font(.system(.title3).weight(.medium))
                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                    .font(.system(size: 21, weight: .medium, design: .rounded))
+//                    .font(.system(size: 21, weight: .medium))
                     .foregroundColor(Color.SubtitleText)
 
                 Spacer()
@@ -1774,11 +1775,11 @@ struct NoResultsView: View {
                 //                .accessibility(hidden: true)
 
                 Image(systemName: "tray.full.fill")
-                    .font(.system(size: 38, weight: .regular, design: .rounded))
+                    .font(.system(size: 38, weight: .regular))
                     .foregroundColor(Color.SubtitleText)
 
                 Text("No entries found.")
-                    .font(.system(size: 21, weight: .medium, design: .rounded))
+                    .font(.system(size: 21, weight: .medium))
                     .foregroundColor(Color.SubtitleText)
 
                 Spacer()
@@ -1800,7 +1801,7 @@ struct CategoryStepperView: View {
         HStack(spacing: 8) {
             if income {
                 Image(systemName: "plus")
-                    .font(.system(.body, design: .rounded).weight(.semibold))
+                    .font(.system(.body).weight(.semibold))
                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
 //                    .font(.system(size: 18, weight: .semibold))
                     .foregroundColor(Color.IncomeGreen)
@@ -1824,7 +1825,7 @@ struct CategoryStepperView: View {
                     }
             } else {
                 Image(systemName: "minus")
-                    .font(.system(.body, design: .rounded).weight(.semibold))
+                    .font(.system(.body).weight(.semibold))
                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
 //                    .font(.system(size: 18, weight: .semibold))
                     .foregroundColor(Color.AlertRed)
@@ -1854,12 +1855,12 @@ struct CategoryStepperView: View {
                         ForEach(categories, id: \.self) { item in
                             HStack(spacing: 5) {
                                 Text(item.wrappedEmoji)
-                                    .font(.system(.footnote, design: .rounded).weight(.medium))
+                                    .font(.system(.footnote).weight(.medium))
                                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
 //                                    .font(.system(size: 13))
                                 Text(item.wrappedName)
-//                                    .font(.system(size: 17.5, weight: .medium, design: .rounded))
-                                    .font(.system(.body, design: .rounded).weight(.medium))
+//                                    .font(.system(size: 17.5, weight: .medium))
+                                    .font(.system(.body).weight(.medium))
                                     .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                             }
                             .id(item.id)
@@ -1932,8 +1933,8 @@ struct IncomeFilterToggleView: View {
     var body: some View {
         HStack(spacing: 0) {
             Text("Expense")
-//                .font(.system(size: 17, weight: .semibold, design: .rounded))
-                .font(.system(.body, design: .rounded).weight(.semibold))
+//                .font(.system(size: 17, weight: .semibold))
+                .font(.system(.body).weight(.semibold))
                 .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                 .foregroundColor(income == false ? Color.PrimaryText : Color.SubtitleText)
                 .padding(5.5)
@@ -1955,8 +1956,8 @@ struct IncomeFilterToggleView: View {
                 }
 
             Text("filter-picker-income")
-//                .font(.system(size: 17, weight: .semibold, design: .rounded))
-                .font(.system(.body, design: .rounded).weight(.semibold))
+//                .font(.system(size: 17, weight: .semibold))
+                .font(.system(.body).weight(.semibold))
                 .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                 .foregroundColor(income == true ? Color.PrimaryText : Color.SubtitleText)
                 .padding(5.5)
@@ -2018,9 +2019,9 @@ struct DateStepperView: View {
             Spacer()
 
             Text(dateString)
-                .font(.system(.title3, design: .rounded).weight(.bold))
+                .font(.system(.title3).weight(.bold))
                 .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-//                .font(.system(size: 20, weight: .bold, design: .rounded))
+//                .font(.system(size: 20, weight: .bold))
                 .accessibilityLabel("showing transactions on \(dateString)")
 
             Spacer()
@@ -2101,7 +2102,7 @@ struct WeekStepperView: View {
             Spacer()
 
             Text(dateString)
-                .font(.system(.title3, design: .rounded).weight(.bold))
+                .font(.system(.title3).weight(.bold))
                 .accessibilityLabel(accessibilityDateString)
 
             Spacer()
@@ -2177,7 +2178,7 @@ struct MonthStepperView: View {
             Spacer()
 
             Text(dateString)
-                .font(.system(.title3, design: .rounded).weight(.bold))
+                .font(.system(.title3).weight(.bold))
                 .accessibilityLabel("showing transactions in \(dateString)")
 
             Spacer()

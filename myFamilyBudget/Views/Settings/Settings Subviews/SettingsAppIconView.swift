@@ -17,10 +17,13 @@ struct AppIconBundle: Hashable {
 
 struct SettingsAppIconView: View {
   @AppStorage("activeIcon", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget"))
-  var activeIcon: String = "AppIcon"
+  var activeIcon: String = "AppIcon_New"
   @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
   let options: [AppIconBundle] = [
+    AppIconBundle(
+      actualFileName: "AppIcon_New", exampleFileName: "AppIcon_New_EG", displayName: "V2.2",
+      displaySubtitle: "Designed by the brilliant @fedetx."),
     AppIconBundle(
       actualFileName: "AppIcon1", exampleFileName: "AppIcon1_EG", displayName: "V2.0",
       displaySubtitle: "Designed by the brilliant @rudra_dsigns, check out his work on Twitter."),
@@ -42,7 +45,7 @@ struct SettingsAppIconView: View {
   var body: some View {
     VStack(spacing: 10) {
       Text("App Icon")
-        .font(.system(.title3, design: .rounded).weight(.semibold))
+        .font(.system(.title3).weight(.semibold))
         .foregroundColor(Color.PrimaryText)
         .frame(maxWidth: .infinity)
         .overlay(alignment: .leading) {
@@ -66,11 +69,11 @@ struct SettingsAppIconView: View {
 
             VStack(alignment: .leading, spacing: 3) {
               Text(options[index].displayName)
-                .font(.system(.body, design: .rounded))
+                .font(.system(.body))
                 .foregroundColor(Color.PrimaryText)
 
               Text(options[index].displaySubtitle)
-                .font(.system(.caption, design: .rounded))
+                .font(.system(.caption))
                 .foregroundColor(Color.SubtitleText)
             }
 
@@ -78,12 +81,12 @@ struct SettingsAppIconView: View {
 
             if activeIcon == options[index].actualFileName {
               Image(systemName: "checkmark")
-                .font(.system(.subheadline, design: .rounded))
+                .font(.system(.subheadline))
                 .foregroundColor(.DarkIcon.opacity(0.6))
                 .matchedGeometryEffect(id: "tick", in: animation)
             } else {
               Image(systemName: "checkmark")
-                .font(.system(.subheadline, design: .rounded))
+                .font(.system(.subheadline))
                 .foregroundColor(.SettingsBackground)
             }
           }

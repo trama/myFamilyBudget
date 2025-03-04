@@ -71,7 +71,7 @@ struct NewExpenseWidgetEntryView: View {
                 AccessoryWidgetBackground()
 
                 Text("\(currencySymbol.count < 3 ? "+" : "")\(currencySymbol)")
-                    .font(.system(size: currencySymbol.count < 3 ? 13 : 11, weight: .bold, design: .rounded))
+                    .font(.system(size: currencySymbol.count < 3 ? 13 : 11, weight: .bold))
                     .foregroundColor(Color.SecondaryBackground)
                     .padding(.vertical, 2)
                     .frame(maxWidth: .infinity)
@@ -88,7 +88,7 @@ struct NewExpenseWidgetEntryView: View {
                     .fill(Color.SecondaryBackground.opacity(0.5))
 
                 Text("\(currencySymbol.count < 3 ? "+" : "")\(currencySymbol)")
-                    .font(.system(size: currencySymbol.count < 3 ? 13 : 11, weight: .bold, design: .rounded))
+                    .font(.system(size: currencySymbol.count < 3 ? 13 : 11, weight: .bold))
                     .foregroundColor(Color.SecondaryBackground)
                     .padding(.vertical, 2)
                     .frame(maxWidth: .infinity)

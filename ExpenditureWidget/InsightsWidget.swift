@@ -359,7 +359,7 @@ struct InsightsWidgetEntryView: View {
                     VStack(spacing: 8) {
                         VStack(alignment: .leading, spacing: -1) {
                             Text(verbText + subtitleText)
-                                .font(.system(size: 10, weight: .semibold, design: .rounded))
+                                .font(.system(size: 10, weight: .semibold))
                                 .foregroundColor(Color.SubtitleText)
 
                             InsightsWidgetDollarView(currencySymbol: currencySymbol, dollarText: dollarText)
@@ -373,13 +373,13 @@ struct InsightsWidgetEntryView: View {
                                     VStack(alignment: .leading) {
                                         Text(getMaxText())
                                             .lineLimit(1)
-                                            .font(.system(size: 8, weight: .regular, design: .rounded))
+                                            .font(.system(size: 8, weight: .regular))
                                             .foregroundColor(Color.SubtitleText)
 
                                         Spacer()
 
                                         Text("0")
-                                            .font(.system(size: 8, weight: .regular, design: .rounded))
+                                            .font(.system(size: 8, weight: .regular))
                                             .foregroundColor(Color.SubtitleText)
                                     }
                                     .frame(height: proxy.size.height * 0.85)
@@ -398,7 +398,7 @@ struct InsightsWidgetEntryView: View {
                                                     }
 
                                                     Text(getWeekday(day: day).prefix(1))
-                                                        .font(.system(size: 8, weight: .bold, design: .rounded))
+                                                        .font(.system(size: 8, weight: .bold))
                                                         .foregroundColor(Color.SubtitleText)
                                                 }
                                                 .opacity(day > Date.now ? 0.3 : 1)
@@ -419,7 +419,7 @@ struct InsightsWidgetEntryView: View {
                                                         .overlay(alignment: .bottom) {
                                                             if numberArray.contains((entry.dates.firstIndex(of: day) ?? -1) + 1) && firstDayOfMonth == 1 {
                                                                 Text("\((entry.dates.firstIndex(of: day) ?? -1) + 1)")
-                                                                    .font(.system(size: 8, weight: .bold, design: .rounded))
+                                                                    .font(.system(size: 8, weight: .bold))
                                                                     .foregroundColor(Color.SubtitleText)
                                                                     .frame(width: 20, alignment: .center)
                                                                     .offset(y: 15)
@@ -445,7 +445,7 @@ struct InsightsWidgetEntryView: View {
                                                         .overlay(alignment: .bottom) {
                                                             if monthNumberArray.contains((entry.dates.firstIndex(of: day) ?? -1) + 1) {
                                                                 Text(LocalizedStringKey(monthNames[(entry.dates.firstIndex(of: day)! + 1)] ?? ""))
-                                                                    .font(.system(size: 8, weight: .bold, design: .rounded))
+                                                                    .font(.system(size: 8, weight: .bold))
                                                                     .foregroundColor(Color.SubtitleText)
                                                                     .frame(width: 20, alignment: .center)
                                                                     .offset(y: 15)
@@ -466,7 +466,7 @@ struct InsightsWidgetEntryView: View {
                                 HStack(spacing: 4) {
                                     Text(getAverageText())
                                         .lineLimit(1)
-                                        .font(.system(size: 8, weight: .regular, design: .rounded))
+                                        .font(.system(size: 8, weight: .regular))
                                         .foregroundColor(Color.PrimaryText)
                                         .opacity((entry.average / Double(getMax())) < 0.2 || (entry.average / Double(getMax())) > 0.8 ? 0 : 1)
 
@@ -504,7 +504,7 @@ struct InsightsWidgetEntryView: View {
                     VStack(spacing: 8) {
                         VStack(alignment: .leading, spacing: -1) {
                             Text(verbText + subtitleText)
-                                .font(.system(size: 10, weight: .semibold, design: .rounded))
+                                .font(.system(size: 10, weight: .semibold))
                                 .foregroundColor(Color.SubtitleText)
 
                             InsightsWidgetDollarView(currencySymbol: currencySymbol, dollarText: dollarText)
@@ -518,13 +518,13 @@ struct InsightsWidgetEntryView: View {
                                     VStack(alignment: .leading) {
                                         Text(getMaxText())
                                             .lineLimit(1)
-                                            .font(.system(size: 8, weight: .regular, design: .rounded))
+                                            .font(.system(size: 8, weight: .regular))
                                             .foregroundColor(Color.SubtitleText)
 
                                         Spacer()
 
                                         Text("0")
-                                            .font(.system(size: 8, weight: .regular, design: .rounded))
+                                            .font(.system(size: 8, weight: .regular))
                                             .foregroundColor(Color.SubtitleText)
                                     }
                                     .frame(height: proxy.size.height * 0.85)
@@ -543,7 +543,7 @@ struct InsightsWidgetEntryView: View {
                                                     }
 
                                                     Text(getWeekday(day: day).prefix(1))
-                                                        .font(.system(size: 8, weight: .bold, design: .rounded))
+                                                        .font(.system(size: 8, weight: .bold))
                                                         .foregroundColor(Color.SubtitleText)
                                                 }
                                                 .opacity(day > Date.now ? 0.3 : 1)
@@ -564,7 +564,7 @@ struct InsightsWidgetEntryView: View {
                                                         .overlay(alignment: .bottom) {
                                                             if numberArray.contains((entry.dates.firstIndex(of: day) ?? -1) + 1) && firstDayOfMonth == 1 {
                                                                 Text("\((entry.dates.firstIndex(of: day) ?? -1) + 1)")
-                                                                    .font(.system(size: 8, weight: .bold, design: .rounded))
+                                                                    .font(.system(size: 8, weight: .bold))
                                                                     .foregroundColor(Color.SubtitleText)
                                                                     .frame(width: 20, alignment: .center)
                                                                     .offset(y: 15)
@@ -590,7 +590,7 @@ struct InsightsWidgetEntryView: View {
                                                         .overlay(alignment: .bottom) {
                                                             if monthNumberArray.contains((entry.dates.firstIndex(of: day) ?? -1) + 1) {
                                                                 Text(LocalizedStringKey(monthNames[(entry.dates.firstIndex(of: day)! + 1)] ?? ""))
-                                                                    .font(.system(size: 8, weight: .bold, design: .rounded))
+                                                                    .font(.system(size: 8, weight: .bold))
                                                                     .foregroundColor(Color.SubtitleText)
                                                                     .frame(width: 20, alignment: .center)
                                                                     .offset(y: 15)
@@ -611,7 +611,7 @@ struct InsightsWidgetEntryView: View {
                                 HStack(spacing: 4) {
                                     Text(getAverageText())
                                         .lineLimit(1)
-                                        .font(.system(size: 8, weight: .regular, design: .rounded))
+                                        .font(.system(size: 8, weight: .regular))
                                         .foregroundColor(Color.PrimaryText)
                                         .opacity((entry.average / Double(getMax())) < 0.2 || (entry.average / Double(getMax())) > 0.8 ? 0 : 1)
 
@@ -768,11 +768,11 @@ struct InsightsWidgetDollarView: View {
         HStack(alignment: .lastTextBaseline, spacing: 1.3) {
             Group {
                 Text(currencySymbol)
-                    .font(.system(.subheadline, design: .rounded).weight(.medium))
+                    .font(.system(.subheadline).weight(.medium))
                     .foregroundColor(Color.SubtitleText) +
 
                 Text(dollarText)
-                    .font(.system(.title3, design: .rounded).weight(.medium))
+                    .font(.system(.title3).weight(.medium))
                     .foregroundColor(Color.PrimaryText)
             }
 
@@ -816,12 +816,12 @@ struct InsightsWidgetCategoryBreakdownView: View {
                                 .frame(width: 8, height: 8)
                             Text(category.name)
                                 .lineLimit(1)
-                                .font(.system(size: 12, weight: .semibold, design: .rounded))
+                                .font(.system(size: 12, weight: .semibold))
                                 .foregroundColor(Color.PrimaryText)
                                 .frame(maxWidth: .infinity, alignment: .leading)
 
                             Text("\(Int(round(category.percent * 100)))%")
-                                .font(.system(size: 12, weight: .regular, design: .rounded))
+                                .font(.system(size: 12, weight: .regular))
                                 .foregroundColor(Color.SubtitleText)
                         }
                     }
@@ -830,7 +830,7 @@ struct InsightsWidgetCategoryBreakdownView: View {
             } else {
                 Text("NO TRANSACTIONS\n\(subtitleText1)")
                     .font(.system(size: 10,
-                                  weight: .medium, design: .rounded))
+                                  weight: .medium))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.SubtitleText)
                     .frame(maxHeight: .infinity)
@@ -839,10 +839,10 @@ struct InsightsWidgetCategoryBreakdownView: View {
             Link(destination: URL(string: "myfbapp://newExpense")!) {
                 HStack(spacing: 4) {
                     Image(systemName: "plus")
-                        .font(.system(size: 9, weight: .medium, design: .rounded))
+                        .font(.system(size: 9, weight: .medium))
 
                     Text("New Expense")
-                        .font(.system(size: 12, weight: .medium, design: .rounded))
+                        .font(.system(size: 12, weight: .medium))
                         .foregroundColor(Color.PrimaryText)
                 }
                 .padding(.vertical, 4)

@@ -24,14 +24,14 @@ struct BudgetView: View {
                     .padding(.bottom, 20)
 
                 Text("Budget Your Finances")
-                    .font(.system(.title2, design: .rounded).weight(.medium))
-//                    .font(.system(size: 23.5, weight: .medium, design: .rounded))
+                    .font(.system(.title2).weight(.medium))
+//                    .font(.system(size: 23.5, weight: .medium))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.PrimaryText.opacity(0.8))
 
                 Text("Link budgets to categories and set appropriate expenditure goals")
-                    .font(.system(.body, design: .rounded).weight(.medium))
-//                    .font(.system(size: 18, weight: .medium, design: .rounded))
+                    .font(.system(.body).weight(.medium))
+//                    .font(.system(size: 18, weight: .medium))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.SubtitleText.opacity(0.7))
             }
@@ -85,15 +85,15 @@ struct ActualBudgetView: View {
             VStack(spacing: 0) {
                 HStack {
                     Text("Budgets")
-                        .font(.system(.title, design: .rounded).weight(.semibold))
-//                        .font(.system(size: 25, weight: .semibold, design: .rounded))
+                        .font(.system(.title).weight(.semibold))
+//                        .font(.system(size: 25, weight: .semibold))
                         .accessibility(addTraits: .isHeader)
 
                     Button {
                         newBudget = true
                     } label: {
                         Image(systemName: "plus")
-                            .font(.system(.subheadline, design: .rounded).weight(.semibold))
+                            .font(.system(.subheadline).weight(.semibold))
 //                            .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(Color.SubtitleText)
                             .padding(4)
@@ -192,19 +192,19 @@ struct ActualBudgetView: View {
                     VStack(spacing: 5) {
                         Spacer()
                         Text("🙈")
-                            .font(.system(.largeTitle, design: .rounded))
+                            .font(.system(.largeTitle))
 //                            .font(.system(size: 45))
                             .padding(.bottom, 9)
 
                         Text("No Budgets Found")
-                            .font(.system(.title2, design: .rounded).weight(.medium))
-//                            .font(.system(size: 23.5, weight: .medium, design: .rounded))
+                            .font(.system(.title2).weight(.medium))
+//                            .font(.system(size: 23.5, weight: .medium))
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.PrimaryText.opacity(0.8))
 
                         Text("Add your first budget today!")
-                            .font(.system(.body, design: .rounded).weight(.medium))
-//                            .font(.system(size: 18, weight: .medium, design: .rounded))
+                            .font(.system(.body).weight(.medium))
+//                            .font(.system(size: 18, weight: .medium))
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.SubtitleText.opacity(0.7))
 
@@ -411,8 +411,8 @@ struct MainBudgetView: View {
                 }
 
                 CrookedText(text: String(localized: "OVERALL SPENT: \(percentString1)"), radius: width / 2 + 8)
-                    .font(.system(.footnote, design: .rounded).weight(.medium))
-//                    .font(.system(size: 13, weight: .medium, design: .rounded))
+                    .font(.system(.footnote).weight(.medium))
+//                    .font(.system(size: 13, weight: .medium))
                     .foregroundColor(Color.SubtitleText)
                     .frame(width: width, height: 10)
 
@@ -422,8 +422,8 @@ struct MainBudgetView: View {
                         .frame(width: internalWidth)
 
                     Text("\(budgetAmount >= totalSpent ? "left" : "over") \(budgetType)")
-                        .font(.system(.subheadline, design: .rounded).weight(.medium))
-//                        .font(.system(size: 15, weight: .medium, design: .rounded))
+                        .font(.system(.subheadline).weight(.medium))
+//                        .font(.system(size: 15, weight: .medium))
                         .foregroundColor(Color.SubtitleText)
                 }
             }
@@ -443,8 +443,8 @@ struct MainBudgetView: View {
                         .frame(width: 60, alignment: .trailing)
                 }
             }
-            .font(.system(.caption2, design: .rounded).weight(.medium))
-//            .font(.system(size: 10, weight: .medium, design: .rounded))
+            .font(.system(.caption2).weight(.medium))
+//            .font(.system(size: 10, weight: .medium))
             .frame(width: width)
             .foregroundColor(Color.SubtitleText)
         }
@@ -663,7 +663,7 @@ struct SingleBudgetView: View {
             if budgetRows {
                 ZStack(alignment: .trailing) {
                     Image(systemName: "xmark")
-                        .font(.system(.footnote, design: .rounded).weight(.bold))
+                        .font(.system(.footnote).weight(.bold))
 //                        .font(.system(size: 13, weight: .bold))
                         .foregroundColor(deleteConfirm ? Color.AlertRed : Color.SubtitleText)
                         .padding(5)
@@ -692,14 +692,14 @@ struct SingleBudgetView: View {
 
                             VStack(alignment: .leading, spacing: -0.5) {
                                 Text(budget.wrappedName)
-                                    .font(.system(.body, design: .rounded).weight(.semibold))
-//                                    .font(.system(size: 18, weight: .semibold, design: .rounded))
+                                    .font(.system(.body).weight(.semibold))
+//                                    .font(.system(size: 18, weight: .semibold))
                                     .lineLimit(1)
                                     .foregroundColor(Color.PrimaryText)
 
                                 Text("\(timeLeft) • \(percentString1) spent")
-                                    .font(.system(.footnote, design: .rounded).weight(.medium))
-//                                    .font(.system(size: 13, weight: .medium, design: .rounded))
+                                    .font(.system(.footnote).weight(.medium))
+//                                    .font(.system(size: 13, weight: .medium))
                                     .lineLimit(1)
                                     .foregroundColor(Color.SubtitleText)
                             }
@@ -711,7 +711,7 @@ struct SingleBudgetView: View {
                             BudgetDollarView(amount: difference, red: totalSpent >= budgetAmount, scale: 1, size: 80)
 
                             Text("\(budgetAmount >= totalSpent ? "left" : "over") \(budgetType)")
-                                .font(.system(.caption2, design: .rounded).weight(.medium))
+                                .font(.system(.caption2).weight(.medium))
                                 .foregroundColor(Color.SubtitleText)
                         }
                     }
@@ -794,19 +794,19 @@ struct SingleBudgetView: View {
                         VStack(alignment: .leading, spacing: 0.5) {
                             HStack(spacing: 4) {
                                 Text(budget.wrappedEmoji)
-                                    .font(.system(.caption, design: .rounded))
+                                    .font(.system(.caption))
 //                                    .font(.system(size: 11.5))
 
                                 Text(budget.wrappedName)
-                                    .font(.system(.subheadline, design: .rounded).weight(.semibold))
-//                                    .font(.system(size: 15, weight: .semibold, design: .rounded))
+                                    .font(.system(.subheadline).weight(.semibold))
+//                                    .font(.system(size: 15, weight: .semibold))
                                     .lineLimit(1)
                                     .foregroundColor(Color.PrimaryText)
                             }
 
                             Text(timeLeft)
-                                .font(.system(.footnote, design: .rounded).weight(.semibold))
-//                                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                                .font(.system(.footnote).weight(.semibold))
+//                                .font(.system(size: 13, weight: .semibold))
                                 .foregroundColor(Color.SubtitleText)
                                 .multilineTextAlignment(.leading)
                         }
@@ -821,8 +821,8 @@ struct SingleBudgetView: View {
                         VStack(alignment: .leading, spacing: -2) {
                             if totalSpent < budgetAmount {
                                 Text("\(percentString1) SPENT")
-                                    .font(.system(.caption2, design: .rounded).weight(.semibold))
-//                                    .font(.system(size: 11, weight: .semibold, design: .rounded))
+                                    .font(.system(.caption2).weight(.semibold))
+//                                    .font(.system(size: 11, weight: .semibold))
                                     .lineLimit(1)
                                     .foregroundColor(totalSpent / budgetAmount > 1 ? Color("BudgetRed") : Color.IncomeGreen)
                                     .padding(.bottom, 5)
@@ -831,7 +831,7 @@ struct SingleBudgetView: View {
                             BudgetDollarView(amount: difference, red: totalSpent >= budgetAmount, scale: 2, size: width - 40)
 
                             Text("\(budgetAmount >= totalSpent ? "left" : "over") \(budgetType)")
-                                .font(.system(.footnote, design: .rounded).weight(.medium))
+                                .font(.system(.footnote).weight(.medium))
                                 .foregroundColor(Color.SubtitleText)
                                 .minimumScaleFactor(0.7)
                                 .lineLimit(1)
@@ -993,11 +993,11 @@ struct BudgetDollarView: View {
         HStack(alignment: .lastTextBaseline, spacing: 1.3) {
             Group {
                 Text(currencySymbol)
-                    .font(.system(dynamicTypeSizes.symbol, design: .rounded).weight(.medium))
+                    .font(.system(dynamicTypeSizes.symbol).weight(.medium))
                     .foregroundColor(red ? Color("BudgetRed") : Color.SubtitleText) +
 
                 Text("\(amount, specifier: showCents && amount < 100 ? "%.2f" : "%.0f")")
-                    .font(.system(dynamicTypeSizes.amount, design: .rounded).weight(.medium))
+                    .font(.system(dynamicTypeSizes.amount).weight(.medium))
                     .foregroundColor(red ? Color("BudgetRed") : Color.PrimaryText)
             }
         }
@@ -1019,11 +1019,11 @@ struct DetailedBudgetDollarView: View {
         HStack(alignment: .lastTextBaseline, spacing: 1.3) {
             Group {
                 Text(currencySymbol)
-                    .font(.system(.title2, design: .rounded).weight(.medium))
+                    .font(.system(.title2).weight(.medium))
                     .foregroundColor(Color.SubtitleText) +
 
                 Text("\(amount, specifier: showCents && amount < 100 ? "%.2f" : "%.0f")")
-                    .font(.system(.largeTitle, design: .rounded).weight(.medium))
+                    .font(.system(.largeTitle).weight(.medium))
                     .foregroundColor(Color.PrimaryText)
             }
         }
@@ -1047,11 +1047,11 @@ struct DetailedBudgetDifferenceDollarView: View {
         HStack(alignment: .lastTextBaseline, spacing: 1.3) {
             Group {
                 Text(currencySymbol)
-                    .font(.system(.title2, design: .rounded).weight(.medium))
+                    .font(.system(.title2).weight(.medium))
                     .foregroundColor(red ? Color("BudgetRed") : Color.SubtitleText) +
 
                 Text("\(amount, specifier: showCents && amount < 100 ? "%.2f" : "%.0f")")
-                    .font(.system(.largeTitle, design: .rounded).weight(.medium))
+                    .font(.system(.largeTitle).weight(.medium))
                     .foregroundColor(red ? Color("BudgetRed") : Color.PrimaryText)
             }
         }
@@ -1083,11 +1083,11 @@ struct DeleteBudgetAlert: View {
 
             VStack(alignment: .leading, spacing: 1.5) {
                 Text("Delete the '\(toDelete.category?.wrappedName ?? "")' budget?")
-                    .font(.system(.title2, design: .rounded).weight(.medium))
+                    .font(.system(.title2).weight(.medium))
                     .foregroundColor(.PrimaryText)
 
                 Text("This action cannot be undone.")
-                    .font(.system(.title3, design: .rounded).weight(.medium))
+                    .font(.system(.title3).weight(.medium))
                     .foregroundColor(.SubtitleText)
                     .padding(.bottom, 25)
 
@@ -1167,11 +1167,11 @@ struct DeleteMainBudgetAlert: View {
 
             VStack(alignment: .leading, spacing: 1.5) {
                 Text("Delete your overall budget?")
-                    .font(.system(.title2, design: .rounded).weight(.medium))
+                    .font(.system(.title2).weight(.medium))
                     .foregroundColor(.PrimaryText)
 
                 Text("This action cannot be undone.")
-                    .font(.system(.title3, design: .rounded).weight(.medium))
+                    .font(.system(.title3).weight(.medium))
                     .foregroundColor(.SubtitleText)
                     .padding(.bottom, 25)
 
@@ -1250,11 +1250,11 @@ struct DetailedBudgetView: View {
                 } label: {
                     HStack(spacing: 4) {
                         Image(systemName: "chevron.left")
-                            .font(.system(.subheadline, design: .rounded).weight(.semibold))
+                            .font(.system(.subheadline).weight(.semibold))
                             .foregroundColor(Color.SubtitleText)
 
                         Text("Back")
-                            .font(.system(.body, design: .rounded).weight(.semibold))
+                            .font(.system(.body).weight(.semibold))
                             .foregroundColor(Color.SubtitleText)
                     }
                     .padding(.vertical, 6)
@@ -1321,11 +1321,11 @@ struct DetailedMainBudgetView: View {
                 } label: {
                     HStack(spacing: 4) {
                         Image(systemName: "chevron.left")
-                            .font(.system(.subheadline, design: .rounded).weight(.semibold))
+                            .font(.system(.subheadline).weight(.semibold))
                             .foregroundColor(Color.SubtitleText)
 
                         Text("Back")
-                            .font(.system(.body, design: .rounded).weight(.semibold))
+                            .font(.system(.body).weight(.semibold))
                             .foregroundColor(Color.SubtitleText)
                     }
                     .padding(.vertical, 6)
@@ -1558,15 +1558,15 @@ struct TimeBudgetView: View {
             VStack(spacing: 10) {
                 HStack(spacing: 7.5) {
                     Text(budget.wrappedEmoji)
-                        .font(.system(.subheadline, design: .rounded))
+                        .font(.system(.subheadline))
                     Text(budget.wrappedName)
-                        .font(.system(.title3, design: .rounded).weight(.medium))
+                        .font(.system(.title3).weight(.medium))
                         .lineLimit(1)
                 }
                 .foregroundColor(Color.PrimaryText)
 
                 Text(subtitleText)
-                    .font(.system(.subheadline, design: .rounded).weight(.semibold))
+                    .font(.system(.subheadline).weight(.semibold))
                     .foregroundColor(Color.SubtitleText)
                     .padding(4)
                     .padding(.horizontal, 7)
@@ -1582,7 +1582,7 @@ struct TimeBudgetView: View {
                         DetailedBudgetDifferenceDollarView(amount: difference, red: totalSpent >= budgetAmount)
 
                         Text(differenceSubtitle)
-                            .font(.system(.subheadline, design: .rounded).weight(.medium))
+                            .font(.system(.subheadline).weight(.medium))
                             .foregroundColor(Color.SubtitleText)
                     }
                     .frame(maxWidth: .infinity, alignment: showExtraDetails ? .leading : .center)
@@ -1592,8 +1592,8 @@ struct TimeBudgetView: View {
                             DetailedBudgetDollarView(amount: leftPerDay)
 
                             Text("left each day")
-                                .font(.system(.subheadline, design: .rounded).weight(.medium))
-//                                .font(.system(size: 15, weight: .medium, design: .rounded))
+                                .font(.system(.subheadline).weight(.medium))
+//                                .font(.system(size: 15, weight: .medium))
                                 .foregroundColor(Color.SubtitleText)
                         }
                         .frame(maxWidth: .infinity, alignment: .trailing)
@@ -1606,8 +1606,8 @@ struct TimeBudgetView: View {
                     DetailedBudgetDifferenceDollarView(amount: difference, red: totalSpent >= budgetAmount)
 
                     Text(differenceSubtitle)
-                        .font(.system(.subheadline, design: .rounded).weight(.medium))
-//                        .font(.system(size: 15, weight: .medium, design: .rounded))
+                        .font(.system(.subheadline).weight(.medium))
+//                        .font(.system(size: 15, weight: .medium))
                         .foregroundColor(Color.SubtitleText)
                 }
                 .padding(.horizontal, 25)
@@ -1639,7 +1639,7 @@ struct TimeBudgetView: View {
                     Text("\(currencySymbol)\(budgetAmount, specifier: "%.2f")")
                 }
                 .frame(maxWidth: .infinity)
-                .font(.system(.caption, design: .rounded))
+                .font(.system(.caption))
                 .foregroundColor(Color.SubtitleText)
             }
             .padding(.bottom, budgetType >= 2 ? 20 : 0)
@@ -2049,12 +2049,12 @@ struct TimeMainBudgetView: View {
             // budget name and emoji and time left
             VStack(spacing: 10) {
                 Text("Overall Budget")
-                    .font(.system(.title3, design: .rounded).weight(.medium))
+                    .font(.system(.title3).weight(.medium))
                     .lineLimit(1)
                     .foregroundColor(Color.PrimaryText)
 
                 Text(subtitleText)
-                    .font(.system(.subheadline, design: .rounded).weight(.semibold))
+                    .font(.system(.subheadline).weight(.semibold))
                     .foregroundColor(Color.SubtitleText)
                     .padding(4)
                     .padding(.horizontal, 7)
@@ -2070,7 +2070,7 @@ struct TimeMainBudgetView: View {
                         DetailedBudgetDifferenceDollarView(amount: difference, red: totalSpent >= budgetAmount)
 
                         Text(differenceSubtitle)
-                            .font(.system(.subheadline, design: .rounded).weight(.medium))
+                            .font(.system(.subheadline).weight(.medium))
                             .foregroundColor(Color.SubtitleText)
                     }
                     .frame(maxWidth: .infinity, alignment: showExtraDetails ? .leading : .center)
@@ -2080,7 +2080,7 @@ struct TimeMainBudgetView: View {
                             DetailedBudgetDollarView(amount: leftPerDay)
 
                             Text("left each day")
-                                .font(.system(.subheadline, design: .rounded).weight(.medium))
+                                .font(.system(.subheadline).weight(.medium))
                                 .foregroundColor(Color.SubtitleText)
                         }
                         .frame(maxWidth: .infinity, alignment: .trailing)
@@ -2093,7 +2093,7 @@ struct TimeMainBudgetView: View {
                     DetailedBudgetDifferenceDollarView(amount: difference, red: totalSpent >= budgetAmount)
 
                     Text(differenceSubtitle)
-                        .font(.system(.subheadline, design: .rounded).weight(.medium))
+                        .font(.system(.subheadline).weight(.medium))
                         .foregroundColor(Color.SubtitleText)
                 }
                 .padding(.horizontal, 25)
@@ -2123,7 +2123,7 @@ struct TimeMainBudgetView: View {
                     Text("\(currencySymbol)\(budgetAmount, specifier: "%.2f")")
                 }
                 .frame(maxWidth: .infinity)
-                .font(.system(.caption, design: .rounded))
+                .font(.system(.caption))
                 .foregroundColor(Color.SubtitleText)
             }
             .padding(.bottom, budgetType >= 2 ? 20 : 0)
@@ -2339,7 +2339,7 @@ struct BudgetStepperView: View {
             Spacer()
 
             Text(dateString)
-                .font(.system(.title3, design: .rounded).weight(.bold))
+                .font(.system(.title3).weight(.bold))
 
             Spacer()
 

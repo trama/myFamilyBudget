@@ -2020,29 +2020,6 @@
         }
       }
     },
-    "days" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "days"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "days"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "giorni"
-          }
-        }
-      }
-    },
     "Delete" : {
       "localizations" : {
         "en-GB" : {
@@ -2159,23 +2136,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Asporto"
-          }
-        }
-      }
-    },
-    "Display Cents" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Display Cents"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mostra Centesimi"
           }
         }
       }
@@ -3151,16 +3111,10 @@
     "Income Tracking" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Income Tracking"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Monitoraggio Entrate"
+            "value" : "Tracciamento delle Entrate"
           }
         }
       }
@@ -4516,25 +4470,14 @@
       "localizations" : {
         "en-GB" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Press the plus button\nto add your first entry"
-          }
-        }
-      }
-    },
-    "Press the plus button to add your first entry" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press the plus button to add your first entry"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Premi il pulsante più per aggiungere la tua prima voce"
+            "value" : "Premi il pulsante + per aggiungere la tua prima voce"
           }
         }
       }
@@ -5092,23 +5035,6 @@
     },
     "Start" : {
 
-    },
-    "Start of month" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start of month"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inizio del mese"
-          }
-        }
-      }
     },
     "Start of Month" : {
       "localizations" : {

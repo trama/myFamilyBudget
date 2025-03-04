@@ -184,7 +184,7 @@ struct LockBudgetWidgetEntryView: View {
                         AccessoryWidgetBackground()
 
                         Text("SELECT BUDGET")
-                            .font(.system(size: 8, weight: .semibold, design: .rounded))
+                            .font(.system(size: 8, weight: .semibold))
                             .frame(maxWidth: .infinity)
                             .multilineTextAlignment(.center)
                     }
@@ -208,7 +208,7 @@ struct LockBudgetWidgetEntryView: View {
 
                         VStack {
                             Text("SELECT BUDGET")
-                                .font(.system(size: 8, weight: .semibold, design: .rounded))
+                                .font(.system(size: 8, weight: .semibold))
                                 .frame(maxWidth: .infinity)
                                 .multilineTextAlignment(.center)
                         }
@@ -232,7 +232,7 @@ struct LockBudgetWidgetEntryView: View {
             if #available(iOS 17.0, *) {
                 if entry.configuration.budget == nil {
                     Text("SELECT BUDGET IN WIDGET OPTIONS")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .font(.system(size: 12, weight: .semibold))
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.center)
                         .containerBackground(for: .widget) { Color.clear }
@@ -247,10 +247,10 @@ struct LockBudgetWidgetEntryView: View {
                                     Text(percentString)
                                 }
                             }
-                            .font(.system(size: 15, weight: .semibold, design: .rounded))
+                            .font(.system(size: 15, weight: .semibold))
 
                             Text("\(currencySymbol)\(difference, specifier: (showCents && difference < 100) ? "%.2f" : "%.0f") \(subtitle) \(budgetType)")
-                                .font(.system(size: 14, weight: .regular, design: .rounded))
+                                .font(.system(size: 14, weight: .regular))
                                 .foregroundColor(Color.SubtitleText)
 
                             Gauge(value: percent, in: 0 ... 1) {
@@ -259,10 +259,10 @@ struct LockBudgetWidgetEntryView: View {
                                 EmptyView()
                             } minimumValueLabel: {
                                 Text("\(entry.totalSpent, specifier: (showCents && entry.totalSpent < 100) ? "%.2f" : "%.0f")")
-                                    .font(.system(size: 10, weight: .regular, design: .rounded))
+                                    .font(.system(size: 10, weight: .regular))
                             } maximumValueLabel: {
                                 Text("\(entry.budget.budgetAmount, specifier: (showCents && entry.budget.budgetAmount < 100) ? "%.2f" : "%.0f")")
-                                    .font(.system(size: 10, weight: .regular, design: .rounded))
+                                    .font(.system(size: 10, weight: .regular))
                             }
                             .frame(height: 5)
                             .gaugeStyle(.accessoryLinear)
@@ -276,7 +276,7 @@ struct LockBudgetWidgetEntryView: View {
             } else {
                 if entry.configuration.budget == nil {
                     Text("SELECT BUDGET IN WIDGET OPTIONS")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .font(.system(size: 12, weight: .semibold))
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.center)
                 } else {
@@ -290,10 +290,10 @@ struct LockBudgetWidgetEntryView: View {
                                     Text(percentString)
                                 }
                             }
-                            .font(.system(size: 15, weight: .semibold, design: .rounded))
+                            .font(.system(size: 15, weight: .semibold))
 
                             Text("\(currencySymbol)\(difference, specifier: (showCents && difference < 100) ? "%.2f" : "%.0f") \(subtitle) \(budgetType)")
-                                .font(.system(size: 14, weight: .regular, design: .rounded))
+                                .font(.system(size: 14, weight: .regular))
                                 .foregroundColor(Color.SubtitleText)
 
                             if #available(iOS 16.0, *) {
@@ -303,10 +303,10 @@ struct LockBudgetWidgetEntryView: View {
                                     EmptyView()
                                 } minimumValueLabel: {
                                     Text("\(entry.totalSpent, specifier: (showCents && entry.totalSpent < 100) ? "%.2f" : "%.0f")")
-                                        .font(.system(size: 10, weight: .regular, design: .rounded))
+                                        .font(.system(size: 10, weight: .regular))
                                 } maximumValueLabel: {
                                     Text("\(entry.budget.budgetAmount, specifier: (showCents && entry.budget.budgetAmount < 100) ? "%.2f" : "%.0f")")
-                                        .font(.system(size: 10, weight: .regular, design: .rounded))
+                                        .font(.system(size: 10, weight: .regular))
                                 }
                                 .frame(height: 5)
                                 .gaugeStyle(.accessoryLinear)

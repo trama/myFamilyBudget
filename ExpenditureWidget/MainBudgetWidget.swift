@@ -172,7 +172,7 @@ struct MainBudgetWidgetEntryView: View {
 
                         VStack {
                             Text("ADD\nBUDGET")
-                                .font(.system(size: 8, weight: .semibold, design: .rounded))
+                                .font(.system(size: 8, weight: .semibold))
                                 .frame(maxWidth: .infinity)
                                 .multilineTextAlignment(.center)
                         }
@@ -196,7 +196,7 @@ struct MainBudgetWidgetEntryView: View {
 
                         VStack {
                             Text("ADD BUDGET")
-                                .font(.system(size: 8, weight: .semibold, design: .rounded))
+                                .font(.system(size: 8, weight: .semibold))
                                 .frame(maxWidth: .infinity)
                                 .multilineTextAlignment(.center)
                         }
@@ -220,7 +220,7 @@ struct MainBudgetWidgetEntryView: View {
             if #available(iOS 17.0, *) {
                 if !entry.found {
                     Text("ADD OVERALL BUDGET")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .font(.system(size: 12, weight: .semibold))
                         .multilineTextAlignment(.center)
                         .containerBackground(for: .widget) { Color.clear }
                 } else {
@@ -234,10 +234,10 @@ struct MainBudgetWidgetEntryView: View {
                                     Text(percentString)
                                 }
                             }
-                            .font(.system(size: 15, weight: .semibold, design: .rounded))
+                            .font(.system(size: 15, weight: .semibold))
 
                             Text("\(currencySymbol)\(difference, specifier: (showCents && difference < 100) ? "%.2f" : "%.0f") \(entry.totalSpent > entry.budgetAmount ? String(localized: "over") : String(localized: "left")) \(budgetType)")
-                                .font(.system(size: 14, weight: .regular, design: .rounded))
+                                .font(.system(size: 14, weight: .regular))
                                 .foregroundColor(Color.SubtitleText)
 
                             Gauge(value: percent, in: 0 ... 1) {
@@ -246,10 +246,10 @@ struct MainBudgetWidgetEntryView: View {
                                 EmptyView()
                             } minimumValueLabel: {
                                 Text("\(entry.totalSpent, specifier: (showCents && entry.totalSpent < 100) ? "%.2f" : "%.0f")")
-                                    .font(.system(size: 10, weight: .regular, design: .rounded))
+                                    .font(.system(size: 10, weight: .regular))
                             } maximumValueLabel: {
                                 Text("\(entry.budgetAmount, specifier: (showCents && entry.budgetAmount < 100) ? "%.2f" : "%.0f")")
-                                    .font(.system(size: 10, weight: .regular, design: .rounded))
+                                    .font(.system(size: 10, weight: .regular))
                             }
                             .frame(height: 5)
                             .gaugeStyle(.accessoryLinear)
@@ -262,7 +262,7 @@ struct MainBudgetWidgetEntryView: View {
             } else {
                 if !entry.found {
                     Text("ADD OVERALL BUDGET")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .font(.system(size: 12, weight: .semibold))
                         .multilineTextAlignment(.center)
                 } else {
                     GeometryReader { proxy in
@@ -275,10 +275,10 @@ struct MainBudgetWidgetEntryView: View {
                                     Text(percentString)
                                 }
                             }
-                            .font(.system(size: 15, weight: .semibold, design: .rounded))
+                            .font(.system(size: 15, weight: .semibold))
 
                             Text("\(currencySymbol)\(difference, specifier: (showCents && difference < 100) ? "%.2f" : "%.0f") \(entry.totalSpent > entry.budgetAmount ? String(localized: "over") : String(localized: "left")) \(budgetType)")
-                                .font(.system(size: 14, weight: .regular, design: .rounded))
+                                .font(.system(size: 14, weight: .regular))
                                 .foregroundColor(Color.SubtitleText)
 
                             if #available(iOS 16.0, *) {
@@ -288,10 +288,10 @@ struct MainBudgetWidgetEntryView: View {
                                     EmptyView()
                                 } minimumValueLabel: {
                                     Text("\(entry.totalSpent, specifier: (showCents && entry.totalSpent < 100) ? "%.2f" : "%.0f")")
-                                        .font(.system(size: 10, weight: .regular, design: .rounded))
+                                        .font(.system(size: 10, weight: .regular))
                                 } maximumValueLabel: {
                                     Text("\(entry.budgetAmount, specifier: (showCents && entry.budgetAmount < 100) ? "%.2f" : "%.0f")")
-                                        .font(.system(size: 10, weight: .regular, design: .rounded))
+                                        .font(.system(size: 10, weight: .regular))
                                 }
                                 .frame(height: 5)
                                 .gaugeStyle(.accessoryLinear)
@@ -307,7 +307,7 @@ struct MainBudgetWidgetEntryView: View {
             if #available(iOS 17.0, *) {
                 if !entry.found {
                     Text("Create your overall budget in the app")
-                        .font(.system(size: 14, weight: .medium, design: .rounded))
+                        .font(.system(size: 14, weight: .medium))
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.SubtitleText)
                         .padding(15)
@@ -318,12 +318,12 @@ struct MainBudgetWidgetEntryView: View {
                         HStack(alignment: .top) {
                             VStack(alignment: .leading, spacing: 2.4) {
                                 Text(headingText.uppercased())
-                                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                                    .font(.system(size: 12, weight: .semibold))
                                     .lineLimit(1)
                                     .foregroundColor(Color.PrimaryText)
 
                                 Text("SPENT: \(percentString1)")
-                                    .font(.system(size: 10, weight: .medium, design: .rounded))
+                                    .font(.system(size: 10, weight: .medium))
                                     .foregroundColor(Color.SubtitleText)
                             }
 
@@ -357,16 +357,16 @@ struct MainBudgetWidgetEntryView: View {
 
                                         if showTimeFrame(size: proxy.size.width - 50) {
                                             Text(systemSmallWidgetText)
-                                                .font(.system(size: 10, weight: .medium, design: .rounded))
+                                                .font(.system(size: 10, weight: .medium))
                                                 .foregroundColor(Color.SubtitleText)
                                         } else {
                                             if entry.budgetAmount >= entry.totalSpent {
                                                 Text("left")
-                                                    .font(.system(size: 10, weight: .medium, design: .rounded))
+                                                    .font(.system(size: 10, weight: .medium))
                                                     .foregroundColor(Color.SubtitleText)
                                             } else {
                                                 Text("over")
-                                                    .font(.system(size: 10, weight: .medium, design: .rounded))
+                                                    .font(.system(size: 10, weight: .medium))
                                                     .foregroundColor(Color.SubtitleText)
                                             }
                                         }
@@ -389,7 +389,7 @@ struct MainBudgetWidgetEntryView: View {
                                             .frame(width: 50, alignment: .trailing)
                                     }
                                 }
-                                .font(.system(size: 10, weight: .medium, design: .rounded))
+                                .font(.system(size: 10, weight: .medium))
                                 .foregroundColor(Color.SubtitleText)
                             }
                             .frame(width: proxy.size.width, height: proxy.size.height, alignment: .bottom)
@@ -402,7 +402,7 @@ struct MainBudgetWidgetEntryView: View {
             } else {
                 if !entry.found {
                     Text("Create your overall budget in the app")
-                        .font(.system(size: 14, weight: .medium, design: .rounded))
+                        .font(.system(size: 14, weight: .medium))
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.SubtitleText)
                         .padding(15)
@@ -413,12 +413,12 @@ struct MainBudgetWidgetEntryView: View {
                         HStack(alignment: .top) {
                             VStack(alignment: .leading, spacing: 2.4) {
                                 Text(headingText.uppercased())
-                                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                                    .font(.system(size: 12, weight: .semibold))
                                     .lineLimit(1)
                                     .foregroundColor(Color.PrimaryText)
 
                                 Text("SPENT: \(percentString1)")
-                                    .font(.system(size: 10, weight: .medium, design: .rounded))
+                                    .font(.system(size: 10, weight: .medium))
                                     .foregroundColor(Color.SubtitleText)
                             }
 
@@ -452,16 +452,16 @@ struct MainBudgetWidgetEntryView: View {
 
                                         if showTimeFrame(size: proxy.size.width - 50) {
                                             Text(systemSmallWidgetText)
-                                                .font(.system(size: 10, weight: .medium, design: .rounded))
+                                                .font(.system(size: 10, weight: .medium))
                                                 .foregroundColor(Color.SubtitleText)
                                         } else {
                                             if entry.budgetAmount >= entry.totalSpent {
                                                 Text("left")
-                                                    .font(.system(size: 10, weight: .medium, design: .rounded))
+                                                    .font(.system(size: 10, weight: .medium))
                                                     .foregroundColor(Color.SubtitleText)
                                             } else {
                                                 Text("over")
-                                                    .font(.system(size: 10, weight: .medium, design: .rounded))
+                                                    .font(.system(size: 10, weight: .medium))
                                                     .foregroundColor(Color.SubtitleText)
                                             }
                                         }
@@ -484,7 +484,7 @@ struct MainBudgetWidgetEntryView: View {
                                             .frame(width: 50, alignment: .trailing)
                                     }
                                 }
-                                .font(.system(size: 10, weight: .medium, design: .rounded))
+                                .font(.system(size: 10, weight: .medium))
                                 .foregroundColor(Color.SubtitleText)
                             }
                             .frame(width: proxy.size.width, height: proxy.size.height, alignment: .bottom)

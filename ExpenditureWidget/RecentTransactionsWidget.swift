@@ -205,7 +205,7 @@ struct ExpenditureWidgetEntryView: View {
             if #available(iOS 17.0, *) {
                 if entry.transactions.count == 0 {
                     Text("NO RECENT EXPENSES")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .font(.system(size: 12, weight: .semibold))
                         .multilineTextAlignment(.center)
                         .containerBackground(for: .widget) { Color.clear }
                 } else {
@@ -223,7 +223,7 @@ struct ExpenditureWidgetEntryView: View {
                                         .layoutPriority(1)
                                         .lineLimit(1)
                                 }
-                                .font(.system(size: getRectangularWidgetFont(width: proxy.size.width), design: .rounded))
+                                .font(.system(size: getRectangularWidgetFont(width: proxy.size.width)))
                             }
                         }
                         .frame(width: proxy.size.width, height: proxy.size.height)
@@ -234,7 +234,7 @@ struct ExpenditureWidgetEntryView: View {
             } else {
                 if entry.transactions.count == 0 {
                     Text("NO RECENT EXPENSES")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .font(.system(size: 12, weight: .semibold))
                         .multilineTextAlignment(.center)
                 } else {
                     GeometryReader { proxy in
@@ -251,7 +251,7 @@ struct ExpenditureWidgetEntryView: View {
                                         .layoutPriority(1)
                                         .lineLimit(1)
                                 }
-                                .font(.system(size: getRectangularWidgetFont(width: proxy.size.width), design: .rounded))
+                                .font(.system(size: getRectangularWidgetFont(width: proxy.size.width)))
                             }
                         }
                         .frame(width: proxy.size.width, height: proxy.size.height)
@@ -265,7 +265,7 @@ struct ExpenditureWidgetEntryView: View {
                     VStack(spacing: 0) {
                         VStack(spacing: 0) {
                             Text((typeText + " " + inlineSubtitleText).uppercased())
-                                .font(.system(size: 9, weight: .semibold, design: .rounded))
+                                .font(.system(size: 9, weight: .semibold))
                                 .foregroundColor(Color.SubtitleText)
 
                             RecentTransactionsDollarView(amount: entry.amount, showCents: showCents, net: entry.type == .net, bigger: true)
@@ -277,16 +277,16 @@ struct ExpenditureWidgetEntryView: View {
                         if entry.transactions.isEmpty {
                             VStack(spacing: 5) {
                                 Text("NO RECENT EXPENSES")
-                                    .font(.system(size: 9, weight: .medium, design: .rounded))
+                                    .font(.system(size: 9, weight: .medium))
                                     .foregroundColor(Color.SubtitleText)
                                     .frame(maxHeight: .infinity)
 
                                 HStack(spacing: 5) {
                                     Image(systemName: "plus")
-                                        .font(.system(size: 10, weight: .medium, design: .rounded))
+                                        .font(.system(size: 10, weight: .medium))
 
                                     Text("New Expense")
-                                        .font(.system(size: 12, weight: .medium, design: .rounded))
+                                        .font(.system(size: 12, weight: .medium))
                                         .foregroundColor(Color.PrimaryText)
                                 }
                                 .padding(.vertical, 5)
@@ -299,7 +299,7 @@ struct ExpenditureWidgetEntryView: View {
                         } else {
                             VStack(alignment: .leading, spacing: 5) {
                                 Text("RECENT EXPENSES")
-                                    .font(.system(size: 9, weight: .medium, design: .rounded))
+                                    .font(.system(size: 9, weight: .medium))
                                     .foregroundColor(Color.SubtitleText)
 
                                 ForEach(entry.transactions.prefix(3), id: \.self) { transaction in
@@ -310,19 +310,19 @@ struct ExpenditureWidgetEntryView: View {
 
                                         Text(transaction.note)
                                             .lineLimit(1)
-                                            .font(.system(size: 13, weight: .regular, design: .rounded))
+                                            .font(.system(size: 13, weight: .regular))
                                             .foregroundColor(Color.PrimaryText)
                                             .frame(maxWidth: .infinity, alignment: .leading)
 
                                         if transaction.income {
                                             Text("+\(currencySymbol)\(transaction.amount, specifier: (showCents && transaction.amount < 100) ? "%.2f" : "%.0f")")
-                                                .font(.system(size: 13, weight: .regular, design: .rounded))
+                                                .font(.system(size: 13, weight: .regular))
                                                 .foregroundColor(Color.IncomeGreen)
                                                 .lineLimit(1)
                                                 .layoutPriority(1)
                                         } else {
                                             Text("-\(currencySymbol)\(transaction.amount, specifier: (showCents && transaction.amount < 100) ? "%.2f" : "%.0f")")
-                                                .font(.system(size: 13, weight: .regular, design: .rounded))
+                                                .font(.system(size: 13, weight: .regular))
                                                 .foregroundColor(Color.SubtitleText)
                                                 .lineLimit(1)
                                                 .layoutPriority(1)
@@ -333,10 +333,10 @@ struct ExpenditureWidgetEntryView: View {
                                 if entry.transactions.count < 2 {
                                     HStack(spacing: 5) {
                                         Image(systemName: "plus")
-                                            .font(.system(size: 10, weight: .medium, design: .rounded))
+                                            .font(.system(size: 10, weight: .medium))
 
                                         Text("New Expense")
-                                            .font(.system(size: 12, weight: .medium, design: .rounded))
+                                            .font(.system(size: 12, weight: .medium))
                                             .foregroundColor(Color.PrimaryText)
                                     }
                                     .padding(.vertical, 5)
@@ -361,7 +361,7 @@ struct ExpenditureWidgetEntryView: View {
                     VStack(spacing: 0) {
                         VStack(spacing: 0) {
                             Text((typeText + " " + inlineSubtitleText).uppercased())
-                                .font(.system(size: 9, weight: .semibold, design: .rounded))
+                                .font(.system(size: 9, weight: .semibold))
                                 .foregroundColor(Color.SubtitleText)
 
                             RecentTransactionsDollarView(amount: entry.amount, showCents: showCents, net: entry.type == .net)
@@ -373,16 +373,16 @@ struct ExpenditureWidgetEntryView: View {
                         if entry.transactions.isEmpty {
                             VStack(spacing: 5) {
                                 Text("NO RECENT EXPENSES")
-                                    .font(.system(size: 9, weight: .medium, design: .rounded))
+                                    .font(.system(size: 9, weight: .medium))
                                     .foregroundColor(Color.SubtitleText)
                                     .frame(maxHeight: .infinity)
 
                                 HStack(spacing: 5) {
                                     Image(systemName: "plus")
-                                        .font(.system(size: 10, weight: .medium, design: .rounded))
+                                        .font(.system(size: 10, weight: .medium))
 
                                     Text("New Expense")
-                                        .font(.system(size: 12, weight: .medium, design: .rounded))
+                                        .font(.system(size: 12, weight: .medium))
                                         .foregroundColor(Color.PrimaryText)
                                 }
                                 .padding(.vertical, 5)
@@ -395,7 +395,7 @@ struct ExpenditureWidgetEntryView: View {
                         } else {
                             VStack(alignment: .leading, spacing: 5) {
                                 Text("RECENT EXPENSES")
-                                    .font(.system(size: 9, weight: .medium, design: .rounded))
+                                    .font(.system(size: 9, weight: .medium))
                                     .foregroundColor(Color.SubtitleText)
 
                                 ForEach(entry.transactions.prefix(3), id: \.self) { transaction in
@@ -406,19 +406,19 @@ struct ExpenditureWidgetEntryView: View {
 
                                         Text(transaction.note)
                                             .lineLimit(1)
-                                            .font(.system(size: 13, weight: .regular, design: .rounded))
+                                            .font(.system(size: 13, weight: .regular))
                                             .foregroundColor(Color.PrimaryText)
                                             .frame(maxWidth: .infinity, alignment: .leading)
 
                                         if transaction.income {
                                             Text("+\(currencySymbol)\(transaction.amount, specifier: (showCents && transaction.amount < 100) ? "%.2f" : "%.0f")")
-                                                .font(.system(size: 13, weight: .regular, design: .rounded))
+                                                .font(.system(size: 13, weight: .regular))
                                                 .foregroundColor(Color.IncomeGreen)
                                                 .lineLimit(1)
                                                 .layoutPriority(1)
                                         } else {
                                             Text("-\(currencySymbol)\(transaction.amount, specifier: (showCents && transaction.amount < 100) ? "%.2f" : "%.0f")")
-                                                .font(.system(size: 13, weight: .regular, design: .rounded))
+                                                .font(.system(size: 13, weight: .regular))
                                                 .foregroundColor(Color.SubtitleText)
                                                 .lineLimit(1)
                                                 .layoutPriority(1)
@@ -429,10 +429,10 @@ struct ExpenditureWidgetEntryView: View {
                                 if entry.transactions.count < 2 {
                                     HStack(spacing: 5) {
                                         Image(systemName: "plus")
-                                            .font(.system(size: 10, weight: .medium, design: .rounded))
+                                            .font(.system(size: 10, weight: .medium))
 
                                         Text("New Expense")
-                                            .font(.system(size: 12, weight: .medium, design: .rounded))
+                                            .font(.system(size: 12, weight: .medium))
                                             .foregroundColor(Color.PrimaryText)
                                     }
                                     .padding(.vertical, 5)
@@ -459,7 +459,7 @@ struct ExpenditureWidgetEntryView: View {
                     VStack(spacing: 0) {
                         VStack(spacing: 0) {
                             Text((typeText + " " + inlineSubtitleText).uppercased())
-                                .font(.system(size: 12, weight: .semibold, design: .rounded))
+                                .font(.system(size: 12, weight: .semibold))
                                 .foregroundColor(Color.SubtitleText)
 
                             RecentTransactionsDollarView(amount: entry.amount, showCents: showCents, net: entry.type == .net)
@@ -474,16 +474,16 @@ struct ExpenditureWidgetEntryView: View {
                         if entry.transactions.isEmpty {
                             VStack(spacing: 20) {
                                 Text("NO RECENT EXPENSES")
-                                    .font(.system(size: 15, weight: .medium, design: .rounded))
+                                    .font(.system(size: 15, weight: .medium))
                                     .foregroundColor(Color.SubtitleText)
 
                                 Link(destination: URL(string: "myfbapp://newExpense")!) {
                                     HStack(spacing: 4) {
                                         Image(systemName: "plus")
-                                            .font(.system(size: 13, weight: .semibold, design: .rounded))
+                                            .font(.system(size: 13, weight: .semibold))
 
                                         Text("New Expense")
-                                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+                                            .font(.system(size: 16, weight: .semibold))
                                             .foregroundColor(Color.PrimaryText)
                                     }
                                     .padding(.vertical, 6)
@@ -496,7 +496,7 @@ struct ExpenditureWidgetEntryView: View {
                         } else {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text("RECENT EXPENSES")
-                                    .font(.system(size: 12, weight: .medium, design: .rounded))
+                                    .font(.system(size: 12, weight: .medium))
                                     .foregroundColor(Color.SubtitleText)
 
                                 ForEach(entry.transactions, id: \.self) { transaction in
@@ -507,19 +507,19 @@ struct ExpenditureWidgetEntryView: View {
 
                                         Text(transaction.note)
                                             .lineLimit(1)
-                                            .font(.system(size: 16, weight: .medium, design: .rounded))
+                                            .font(.system(size: 16, weight: .medium))
                                             .foregroundColor(Color.PrimaryText)
                                             .frame(maxWidth: .infinity, alignment: .leading)
 
                                         if transaction.income {
                                             Text("+\(currencySymbol)\(transaction.amount, specifier: (showCents && transaction.amount < 100) ? "%.2f" : "%.0f")")
-                                                .font(.system(size: 16, weight: .regular, design: .rounded))
+                                                .font(.system(size: 16, weight: .regular))
                                                 .foregroundColor(Color.IncomeGreen)
                                                 .lineLimit(1)
                                                 .layoutPriority(1)
                                         } else {
                                             Text("-\(currencySymbol)\(transaction.amount, specifier: (showCents && transaction.amount < 100) ? "%.2f" : "%.0f")")
-                                                .font(.system(size: 16, weight: .regular, design: .rounded))
+                                                .font(.system(size: 16, weight: .regular))
                                                 .foregroundColor(Color.SubtitleText)
                                                 .lineLimit(1)
                                                 .layoutPriority(1)
@@ -531,10 +531,10 @@ struct ExpenditureWidgetEntryView: View {
                                     Link(destination: URL(string: "myfbapp://newExpense")!) {
                                         HStack(spacing: 4) {
                                             Image(systemName: "plus")
-                                                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                                                .font(.system(size: 13, weight: .semibold))
 
                                             Text("New Expense")
-                                                .font(.system(size: 16, weight: .semibold, design: .rounded))
+                                                .font(.system(size: 16, weight: .semibold))
                                                 .foregroundColor(Color.PrimaryText)
                                         }
                                         .padding(.vertical, 6)
@@ -613,11 +613,11 @@ struct RecentTransactionsDollarView: View {
         HStack(alignment: .lastTextBaseline, spacing: 1.3) {
             Group {
                 Text(net ? "\(amount < 0 ? "-" : (amount == 0 ? "" : "+"))\(currencySymbol)" : currencySymbol)
-                    .font(.system(bigger ? .title3 : .subheadline, design: .rounded).weight(.medium))
+                    .font(.system(bigger ? .title3 : .subheadline).weight(.medium))
                     .foregroundColor(Color.SubtitleText) +
 
                 Text("\(actualAmount, specifier: showCents && actualAmount < 100  ? "%.2f" : "%.0f")")
-                    .font(.system(bigger ? .title : .title3, design: .rounded).weight(.medium))
+                    .font(.system(bigger ? .title : .title3).weight(.medium))
                     .foregroundColor(Color.PrimaryText)
             }
 

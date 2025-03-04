@@ -37,18 +37,18 @@ struct WelcomeSheetView: View {
             if firstPage {
                 VStack(spacing: 50) {
                     VStack(spacing: 2) {
-                        Image("AppIcon1_EG")
+                        Image("AppIcon_New")
                             .resizable()
                             .frame(width: 70, height: 70)
                             .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
                             .padding(.bottom, 20)
 
                         Text("myfamilybudget_name")
-                            .font(.system(size: 30, weight: .medium, design: .rounded))
+                            .font(.system(size: 30, weight: .medium))
                             .foregroundColor(Color.PrimaryText)
 
                         Text("Version \(UIApplication.appVersion ?? "") (\(UIApplication.buildNumber ?? ""))")
-                            .font(.system(size: 14, weight: .medium, design: .rounded))
+                            .font(.system(size: 14, weight: .medium))
                             .foregroundColor(Color.SubtitleText)
                             .padding(.bottom, 15)
                     }
@@ -67,11 +67,11 @@ struct WelcomeSheetView: View {
 
                                     VStack(alignment: .leading, spacing: 5) {
                                         Text(LocalizedStringKey(welcomeFeatures[rowIndex].header))
-                                            .font(.system(size: 18, weight: .medium, design: .rounded))
+                                            .font(.system(size: 18, weight: .medium))
                                             .foregroundColor(Color.PrimaryText)
 
                                         Text(LocalizedStringKey(welcomeFeatures[rowIndex].subtitle))
-                                            .font(.system(size: 16, weight: .regular, design: .rounded))
+                                            .font(.system(size: 16, weight: .regular))
                                             .fixedSize(horizontal: false, vertical: true)
                                             .foregroundColor(Color.SubtitleText)
                                     }
@@ -98,7 +98,7 @@ struct WelcomeSheetView: View {
                         }
                     } label: {
                         Text("Get Started")
-                            .font(.system(size: 20, weight: .semibold, design: .rounded))
+                            .font(.system(size: 20, weight: .semibold))
                             .foregroundColor(Color.LightIcon)
                             .padding(.vertical, 12)
                             .frame(maxWidth: .infinity)

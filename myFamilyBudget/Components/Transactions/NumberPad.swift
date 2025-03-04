@@ -57,7 +57,7 @@ struct NumberPad: View {
                             isEditingDecimal = true
                         } label: {
                             Text(".")
-                                .font(.system(size: 34, weight: .regular, design: .rounded))
+                                .font(.system(size: 34, weight: .regular))
                                 .frame(width: proxy.size.width * 0.3, height: proxy.size.height * 0.22)
                                 .background(Color.SecondaryBackground)
                                 .foregroundColor(Color.PrimaryText)
@@ -74,11 +74,11 @@ struct NumberPad: View {
                         Group {
                             if #available(iOS 17.0, *) {
                                 Image(systemName: "checkmark.square.fill")
-                                    .font(.system(size: 30, weight: .medium, design: .rounded))
+                                    .font(.system(size: 30, weight: .medium))
                                     .symbolEffect(.bounce.up.byLayer, value: price != 0 && category != nil)
                             } else {
                                 Image(systemName: "checkmark.square.fill")
-                                    .font(.system(size: 30, weight: .medium, design: .rounded))
+                                    .font(.system(size: 30, weight: .medium))
                             }
                         }
                         .frame(width: proxy.size.width * 0.3, height: proxy.size.height * 0.22)
@@ -211,7 +211,7 @@ struct NumberPad: View {
             }
         } label: {
             Text("\(number)")
-                .font(.system(size: 34, weight: .regular, design: .rounded))
+                .font(.system(size: 34, weight: .regular))
                 .frame(width: size.width * 0.3, height: size.height * 0.22)
                 .background(Color.SecondaryBackground)
                 .foregroundColor(Color.PrimaryText)
@@ -241,7 +241,8 @@ struct NumberPadTextView: View {
     @Binding var isEditingDecimal: Bool
     @Binding var decimalValuesAssigned: AssignedDecimal
 
-    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
+    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currency?.identifier ?? "EUR"
+    
     var currencySymbol: String {
         return Locale.current.localizedCurrencySymbol(forCurrencyCode: currency)!
     }
@@ -296,18 +297,18 @@ struct NumberPadTextView: View {
         HStack(alignment: .lastTextBaseline, spacing: 0) {
             Group {
                 Text(currencySymbol)
-                    .font(.system(.largeTitle, design: .rounded))
+                    .font(.system(.largeTitle))
                     .foregroundColor(Color.SubtitleText)
 
 //                ForEach(displayNumbers, id: \.self) { number in
 //                    Text(number)
-//                        .font(.system(size: largerFontSize, weight: .regular, design: .rounded))
+//                        .font(.system(size: largerFontSize, weight: .regular))
 //                        .foregroundColor(Color.PrimaryText)
 //                        .transition(AnyTransition.opacity.combined(with: .scale).combined(with: .move(edge: .trailing)))
 //                }
 
                 + Text(amount)
-                    .font(.system(size: largerFontSize, weight: .regular, design: .rounded))
+                    .font(.system(size: largerFontSize, weight: .regular))
                     .foregroundColor(Color.PrimaryText)
 
             }

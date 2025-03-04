@@ -107,13 +107,13 @@
 //            if entry.added {
 //                VStack(spacing: 7) {
 //                    Image(systemName: "checkmark")
-//                        .font(.system(size: 16, weight: .semibold, design: .rounded))
+//                        .font(.system(size: 16, weight: .semibold))
 //                        .foregroundColor(Color.IncomeGreen)
 //                        .frame(width: 30, height: 30)
 //                        .background(Color.IncomeGreen.opacity(0.3), in: Circle())
 //
 //                    Text("Transaction Added")
-//                        .font(.system(size: 15, weight: .semibold, design: .rounded))
+//                        .font(.system(size: 15, weight: .semibold))
 //                        .foregroundColor(Color.IncomeGreen)
 //                        .multilineTextAlignment(.center)
 //                }
@@ -161,7 +161,7 @@
 //
 //
 //                Text("\(currencySymbol.count < 3 ? "+" : "")\(currencySymbol)")
-//                    .font(.system(size: currencySymbol.count < 3 ? 13 : 11, weight: .bold, design: .rounded))
+//                    .font(.system(size: currencySymbol.count < 3 ? 13 : 11, weight: .bold))
 //                    .foregroundColor(Color.SecondaryBackground)
 //                    .padding(.vertical, 2)
 //                    .frame(maxWidth: .infinity)
@@ -213,20 +213,20 @@
 //    var body: some View {
 //        VStack(spacing: 6) {
 //            Text(transaction.wrappedEmoji)
-//                .font(.system(size: 14, weight: .semibold, design: .rounded))
+//                .font(.system(size: 14, weight: .semibold))
 ////                .padding(5)
 ////                .background(blend(over: transactionColor, withAlpha: 0.3), in: RoundedRectangle(cornerRadius: 8))
 //
 //
 //            HStack(alignment: .lastTextBaseline, spacing: 0.5) {
 //                Text(currencySymbol)
-//                    .font(.system(size: downsize.small, weight: .semibold, design: .rounded))
+//                    .font(.system(size: downsize.small, weight: .semibold))
 //                    .foregroundColor(Color.PrimaryText.opacity(0.8))
 //                    .baselineOffset(getDollarOffset(big: downsize.big, small: downsize.small))
 //
 //
 //                Text(downsize.amountText)
-//                    .font(.system(size: downsize.big, weight: .semibold, design: .rounded))
+//                    .font(.system(size: downsize.big, weight: .semibold))
 //                    .foregroundColor(Color.PrimaryText.opacity(0.8))
 //
 //            }
