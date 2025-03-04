@@ -61,7 +61,7 @@ struct SuggestedCategory: Hashable {
         let cash = SuggestedCategory(name: "Cash", emoji: "💰")
         holding.append(cash)
         
-        let child_allowance = SuggestedCategory(name: "Child Allowance", emoji: "💰")
+        let child_allowance = SuggestedCategory(name: "Child Allowance", emoji: "💵")
         holding.append(child_allowance)
         
         let pets = SuggestedCategory(name: "Pets", emoji: "🐕")

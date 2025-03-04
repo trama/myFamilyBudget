@@ -11,10 +11,10 @@ import Foundation
 import SwiftUIIntrospect
 import Popovers
 import SwiftUI
-
-#Preview{
-    LogView(topEdge: 15, bottomEdge: 15, launchSearch: true)
-}
+//
+//#Preview{
+//    LogView(topEdge: 15, bottomEdge: 15, launchSearch: true)
+//}
 
 struct LogView: View {
     //@ObservedObject var syncMonitor = SyncMonitor.shared
@@ -1254,7 +1254,7 @@ struct SingleTransactionView: View {
                 .offset(x: 80)
                 .offset(x: max(-80, offset))
 
-            HStack(spacing: 12) {
+            HStack(spacing: 2) { //12
                 EmojiLogView(emoji: (transaction.category?.wrappedEmoji ?? ""),
                              colour: (transaction.category?.wrappedColour ?? "#FFFFFF"), future: future)
                     .fixedSize(horizontal: true, vertical: true)
@@ -1303,9 +1303,10 @@ struct SingleTransactionView: View {
                         .layoutPriority(1)
                 }
             }
+            
             .id(refreshID)
-            .padding(.vertical, 8)
-            .padding(.horizontal, 10)
+            .padding(.vertical, 4)//8
+            .padding(.horizontal, 4)//10
             .contentShape(RoundedRectangle(cornerRadius: 10))
             .onTapGesture {
                 transactionManager.toEdit = transaction

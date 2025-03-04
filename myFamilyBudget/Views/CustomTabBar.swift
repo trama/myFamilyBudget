@@ -38,7 +38,7 @@ struct CustomTabBar: View {
     }
 
     var body: some View {
-        HStack(spacing: 4) {
+        HStack(spacing: 4.0) {
             TabButton(image: "Log", zoomed: isZoomed, currentTab: $currentTab)
 
             TabButton(image: "Insights", zoomed: isZoomed, currentTab: $currentTab)
@@ -50,7 +50,7 @@ struct CustomTabBar: View {
                     .scaleEffect(self.animate ? 1 : 0.4)
 
                 RoundedRectangle(cornerRadius: 20.5, style: .continuous).fill(Color.DarkBackground.opacity(0.8))
-                    .frame(width: 80, height: 53)
+                    .frame(width: 80, height: 40.0)
                     .opacity(self.animate ? 0 : 1)
                     .scaleEffect(self.animate ? 1 : 0.6)
 
@@ -64,7 +64,7 @@ struct CustomTabBar: View {
                     Image(systemName: "plus")
                 }
                 .buttonStyle(MyButtonStyle())
-                .padding(15)
+                .padding(2.0)
             }
             .onAppear {
                 if transactions.isEmpty {
@@ -76,11 +76,13 @@ struct CustomTabBar: View {
             .accessibilityLabel("Add New Transaction")
 
             TabButton(image: "Budget", zoomed: isZoomed, currentTab: $currentTab)
-
+            
+            TabButton(image: "Bank Account", zoomed: isZoomed, currentTab: $currentTab)
+            
             TabButton(image: "Settings", zoomed: isZoomed, currentTab: $currentTab)
         }
-        .padding(.horizontal, 15)
-        .padding(.bottom, bottomEdge - 10)
+        .padding(.horizontal, 15.0)
+        .padding(.bottom, bottomEdge )
         .frame(maxWidth: .infinity)
         .background(Color.PrimaryBackground)
         .fullScreenCover(isPresented: $addTransaction, onDismiss: {
