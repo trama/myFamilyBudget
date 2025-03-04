@@ -1561,6 +1561,17 @@
         }
       }
     },
+    "Cash" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contanti"
+          }
+        }
+      }
+    },
     "categorical budget" : {
       "localizations" : {
         "it" : {
@@ -1691,6 +1702,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Celebra le Spese"
+          }
+        }
+      }
+    },
+    "Child Allowance" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paghetta"
           }
         }
       }
@@ -2130,6 +2152,17 @@
         }
       }
     },
+    "Delivery" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asporto"
+          }
+        }
+      }
+    },
     "Display Cents" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2477,6 +2510,17 @@
     "Extracts your total expenditure or income for a particular time period" : {
 
     },
+    "Extras" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extra"
+          }
+        }
+      }
+    },
     "Family" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2812,39 +2856,25 @@
         }
       }
     },
-    "Gifts" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gifts"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regali"
-          }
-        }
-      }
-    },
     "Groceries" : {
       "extractionState" : "manual",
       "localizations" : {
         "en-GB" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Groceries"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spesa"
+            "value" : "Alimentari"
           }
         }
       }
+    },
+    "Gym" : {
+      "extractionState" : "manual"
     },
     "Haptic Feedback" : {
       "localizations" : {
@@ -2932,6 +2962,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nascosto"
+          }
+        }
+      }
+    },
+    "Home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Casa"
           }
         }
       }
@@ -4387,23 +4434,6 @@
         }
       }
     },
-    "Pets" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pets"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animali"
-          }
-        }
-      }
-    },
     "Pick a start date" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -4721,7 +4751,14 @@
 
     },
     "Sample Sheet" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foglio di test"
+          }
+        }
+      }
     },
     "Sampled Rows from Import CSV" : {
 
@@ -4746,8 +4783,26 @@
     "Save as Photo" : {
 
     },
+    "School" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scuola"
+          }
+        }
+      }
+    },
     "Search" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca"
+          }
+        }
+      }
     },
     "Search entry by note" : {
       "localizations" : {
@@ -5039,6 +5094,7 @@
 
     },
     "Start of month" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en-GB" : {
           "stringUnit" : {
@@ -5055,7 +5111,14 @@
       }
     },
     "Start of Month" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizio del mese"
+          }
+        }
+      }
     },
     "Start of Week" : {
       "localizations" : {
@@ -5564,10 +5627,24 @@
       }
     },
     "total expenditure" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spese Totali"
+          }
+        }
+      }
     },
     "total income" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrate Totali"
+          }
+        }
+      }
     },
     "Total Income" : {
       "localizations" : {
@@ -5668,7 +5745,14 @@
       }
     },
     "Type" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo"
+          }
+        }
+      }
     },
     "Type 1" : {
       "localizations" : {
@@ -5703,7 +5787,14 @@
       }
     },
     "Type of Data" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo di Dati"
+          }
+        }
+      }
     },
     "Type of the transaction" : {
       "localizations" : {
@@ -5735,10 +5826,24 @@
 
     },
     "UPCOMING" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IN ARRIVO"
+          }
+        }
+      }
     },
     "Upcoming Logs" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log in Arrivo"
+          }
+        }
+      }
     },
     "Utilities" : {
       "extractionState" : "manual",
@@ -5758,7 +5863,14 @@
       }
     },
     "Value of the transaction" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valore della transazione"
+          }
+        }
+      }
     },
     "Version %@ (%@)" : {
       "localizations" : {
@@ -6017,7 +6129,14 @@
 
     },
     "Which additional category filters do you want to impose?" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quale filtro categoria addizionale vuoi imporre?"
+          }
+        }
+      }
     },
     "Which day of the %@ do you want your budget to start from?" : {
       "extractionState" : "manual",
@@ -6037,10 +6156,24 @@
       }
     },
     "Which of the following would you like to extract?" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quale di questi vuoi estrarre?"
+          }
+        }
+      }
     },
     "Would you like to log an income or expense?" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuoi registrare un’entrata o una spesa?"
+          }
+        }
+      }
     },
     "year" : {
       "extractionState" : "manual",

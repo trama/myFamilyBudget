@@ -9,6 +9,18 @@ import ConfettiSwiftUI
 import Foundation
 import SwiftUI
 
+#if DEBUG
+struct HomeView_Previews : PreviewProvider {
+
+    static var previews: some View {
+        HomeView(topEdge: 15, bottomEdge: 15)
+            .environmentObject(TabBarManager())
+            .environmentObject(AppLockViewModel())
+            .environmentObject(DataController())
+    }
+}
+#endif
+
 class OverallToastPresenter: ObservableObject {
     @Published var showToast: Bool = false
 }
@@ -132,17 +144,21 @@ struct HomeView: View {
             dataController.save()
             transactionManager.toDelete = nil
         })
+        
         .onChange(of: transactionManager.showPopup) { newValue in
             withAnimation {
                 showPopup = newValue
             }
         }
+        
         .fullScreenCover(item: $transactionManager.toEdit, onDismiss: {
             transactionManager.toEdit = nil
         }) { transaction in
             TransactionView(toEdit: transaction)
         }
+        
         .confettiCannon(counter: $counter, num: 50, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
+        
         .onAppear {
             if appLockVM.isAppLockEnabled && fromURL1 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {

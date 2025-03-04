@@ -457,7 +457,7 @@ struct BrandNewBudgetView: View {
                                     ForEach(1 ..< 29) { day in
                                         HStack {
                                             if Int(day) == 1 {
-                                                Text("Start of month")
+                                                Text("Start of Month")
                                             } else {
                                                 Text("\(getOrdinal(day)) of month")
                                             }

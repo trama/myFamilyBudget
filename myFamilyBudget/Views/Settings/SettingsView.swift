@@ -13,6 +13,13 @@ import SwiftUI
 import UserNotifications
 import WidgetKit
 
+#Preview {
+    SettingsView()
+        .environmentObject(TabBarManager())
+        .environmentObject(AppLockViewModel())
+        .environmentObject(DataController())
+}
+
 struct SettingsView: View {
   @Environment(\.dynamicTypeSize) var dynamicTypeSize
 

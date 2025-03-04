@@ -12,6 +12,10 @@ import SwiftUIIntrospect
 import Popovers
 import SwiftUI
 
+#Preview{
+    LogView(topEdge: 15, bottomEdge: 15, launchSearch: true)
+}
+
 struct LogView: View {
     //@ObservedObject var syncMonitor = SyncMonitor.shared
 
@@ -72,7 +76,7 @@ struct LogView: View {
             VStack(spacing: 5) {
                 Image("dropbox")
                     .resizable()
-                    .frame(width: 75, height: 75)
+                    .frame(width: 75.0, height: 75)
                     .padding(.bottom, 20)
                     .accessibility(hidden: true)
 
@@ -81,12 +85,14 @@ struct LogView: View {
 //                    .font(.system(size: 23.5, weight: .medium, design: .rounded))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.PrimaryText.opacity(0.8))
+                    
 
                 Text("Press the plus button\nto add your first entry")
                     .font(.system(.body, design: .rounded).weight(.medium))
 //                    .font(.system(size: 18, weight: .medium, design: .rounded))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.SubtitleText.opacity(0.7))
+                    .padding(.top, 50.0)
             }
             .padding(.horizontal, 30)
             .frame(height: 250, alignment: .top)
@@ -354,7 +360,7 @@ struct NumberView: AnimatableModifier {
 
     @AppStorage("showCents", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var showCents: Bool = true
 
-    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
+    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currency?.identifier ?? "EUR"
     var currencySymbol: String {
         return Locale.current.localizedCurrencySymbol(forCurrencyCode: currency)!
     }
@@ -1093,7 +1099,7 @@ struct FutureListView: View {
 
     @AppStorage("showCents", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var showCents: Bool = true
 
-    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
+    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currency?.identifier ?? "EUR"
     var currencySymbol: String {
         return Locale.current.localizedCurrencySymbol(forCurrencyCode: currency)!
     }
@@ -1698,7 +1704,7 @@ struct FilteredDateView: View {
 
     var date: Date
 
-    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currencyCode!
+    @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currency?.identifier ?? "EUR"
     var currencySymbol: String {
         return Locale.current.localizedCurrencySymbol(forCurrencyCode: currency)!
     }

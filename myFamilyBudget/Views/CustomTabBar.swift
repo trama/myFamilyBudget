@@ -8,6 +8,10 @@
 import Foundation
 import SwiftUI
 
+#Preview {
+    CustomTabBar(currentTab: .constant(""), topEdge: .zero, bottomEdge: .zero, counter: .constant(0), launchAdd: false)
+}
+
 struct CustomTabBar: View {
     @EnvironmentObject var appLockVM: AppLockViewModel
     @Binding var currentTab: String

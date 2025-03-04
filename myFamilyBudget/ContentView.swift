@@ -8,15 +8,17 @@ import SwiftUI
 import WidgetKit
 
 struct ContentView: View {
+    
     @EnvironmentObject var appLockVM: AppLockViewModel
     @EnvironmentObject var dataController: DataController
     //@Environment(\.managedObjectContext) var viewContext
+    //@EnvironmentObject var tabBarManager: TabBarManager
+    @Environment(\.scenePhase) var scenePhase
+
 
     @AppStorage("colourScheme", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var colourScheme: Int = 0
-    @Environment(\.scenePhase) var scenePhase
     @AppStorage("showNotifications", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var showNotifications: Bool = false
     @AppStorage("notificationsEnabled", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var notificationsEnabled: Bool = true
-
     @AppStorage("firstLaunch", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var firstLaunch: Bool = true
 
     // adds category orders
@@ -26,12 +28,6 @@ struct ContentView: View {
     @AppStorage("dataMigration2", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var dataMigration2: Bool = true
 
     @AppStorage("currency", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var currency: String = Locale.current.currency?.identifier ?? "EUR"
-
-    @State var showIntro: Bool = false
-    @State var showUpdate: Bool = false
-
-    var center = UNUserNotificationCenter.current()
-
     @AppStorage("topEdge", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var savedTopEdge: Double = 30
     @AppStorage("bottomEdge", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var savedBottomEdge: Double = 15
 
@@ -41,7 +37,13 @@ struct ContentView: View {
 
     @AppStorage("showUpdateSheet", store: UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")) var showUpdateSheet: Bool = true
 
+    @State var showIntro: Bool = false
+    @State var showUpdate: Bool = false
+
+    var center = UNUserNotificationCenter.current()
+    
     var body: some View {
+        
         GeometryReader { proxy in
             let topEdge = proxy.safeAreaInsets.top
             let bottomEdge = proxy.safeAreaInsets.bottom
@@ -49,18 +51,23 @@ struct ContentView: View {
             HomeView(topEdge: topEdge, bottomEdge: bottomEdge == 0 ? 15 : bottomEdge)
                 .ignoresSafeArea(.all, edges: .bottom)
                 .preferredColorScheme(colourScheme == 1 ? .light : colourScheme == 2 ? .dark : nil)
+            
                 .fullScreenCover(isPresented: $showIntro) {
                     WelcomeSheetView()
                 }
+            
                 .fullScreenCover(isPresented: $showUpdate) {
                     UpdateAlert()
                 }
+            
                 .onAppear {
                     savedTopEdge = topEdge
                     savedBottomEdge = bottomEdge
                 }
         }
+        
         .ignoresSafeArea(.keyboard)
+        
         .onAppear {
 //            UserDefaults(suiteName: "group.com.fedetx.myFamilyBudget")!.set(false, forKey: "newTransactionAdded")
 //            WidgetCenter.shared.reloadTimelines(ofKind: "TemplateTransactions")
@@ -165,6 +172,7 @@ struct ContentView: View {
                 }
             }
         }
+        
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .background || newPhase == .inactive {
                 if appLockVM.isAppLockEnabled {
@@ -191,3 +199,16 @@ struct ContentView: View {
         }
     }
 }
+
+#if DEBUG
+struct ContentView_Previews : PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(TabBarManager())
+            .environmentObject(AppLockViewModel())
+            .environmentObject(DataController())
+    }
+    
+}
+#endif
+

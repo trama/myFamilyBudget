@@ -21,16 +21,20 @@ struct SuggestedCategory: Hashable {
 
     static var expenses: [SuggestedCategory] {
         var holding = [SuggestedCategory]()
+        
+        let housing = SuggestedCategory(name: "Home", emoji: "🏠")
+        holding.append(housing)
+        
         let food = SuggestedCategory(name: "Food", emoji: "🍔")
         holding.append(food)
 
         let transport = SuggestedCategory(name: "Transport", emoji: "🚆")
         holding.append(transport)
 
-        let housing = SuggestedCategory(name: "Rent", emoji: "🏠")
-        holding.append(housing)
+        let healthcare = SuggestedCategory(name: "Healthcare", emoji: "🚑")
+        holding.append(healthcare)
 
-        let subscriptions = SuggestedCategory(name: "Subscriptions", emoji: "🔄")
+        let subscriptions = SuggestedCategory(name: "Internet+TV", emoji: "📺")
         holding.append(subscriptions)
 
         let groceries = SuggestedCategory(name: "Groceries", emoji: "🛒")
@@ -38,6 +42,9 @@ struct SuggestedCategory: Hashable {
 
         let family = SuggestedCategory(name: "Family", emoji: "👨‍👩‍👦")
         holding.append(family)
+        
+        let school = SuggestedCategory(name: "School", emoji: "🏫")
+        holding.append(school)
 
         let utilities = SuggestedCategory(name: "Utilities", emoji: "💡")
         holding.append(utilities)
@@ -45,18 +52,25 @@ struct SuggestedCategory: Hashable {
         let fashion = SuggestedCategory(name: "Fashion", emoji: "👔")
         holding.append(fashion)
 
-        let healthcare = SuggestedCategory(name: "Healthcare", emoji: "🚑")
-        holding.append(healthcare)
+        let gym = SuggestedCategory(name: "Gym", emoji: "🏋️")
+        holding.append(gym)
 
+        let delivery = SuggestedCategory(name: "Delivery", emoji: "🚚")
+        holding.append(delivery)
+        
+        let cash = SuggestedCategory(name: "Cash", emoji: "💰")
+        holding.append(cash)
+        
+        let child_allowance = SuggestedCategory(name: "Child Allowance", emoji: "💰")
+        holding.append(child_allowance)
+        
         let pets = SuggestedCategory(name: "Pets", emoji: "🐕")
         holding.append(pets)
 
-        let sneakers = SuggestedCategory(name: "Sneakers", emoji: "👟")
-        holding.append(sneakers)
+        let extra = SuggestedCategory(name: "Extras", emoji: "🎁")
+        holding.append(extra)
 
-        let gifts = SuggestedCategory(name: "Gifts", emoji: "🎁")
-        holding.append(gifts)
-
+        
         return holding
     }
 
